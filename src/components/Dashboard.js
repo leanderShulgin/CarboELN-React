@@ -3,6 +3,7 @@ import "bootstrap/dist/css/bootstrap.css";
 import "./Dashboard.css";
 
 import DashboardProyectsTable from "./DashboardProjectsTable";
+import DashboardLinkBox from "./DashboardLinkBox";
 
 class Dashboard extends React.Component {
   render() {
@@ -48,20 +49,8 @@ class Dashboard extends React.Component {
               <DashboardProyectsTable />
             </div>
             <div className="col-lg-3" id="box-nuevo-reporte">
-              <div className="start-box dashboard-link-box">
-                <h4>Nuevo Reporte</h4>
-                <hr />
-                <a href="reporte-editar.html">
-                  Hacé click aquí para comenzar un nuevo reporte
-                </a>
-              </div>
-              <div className="start-box dashboard-link-box">
-                <h4>Nuevo Proyecto</h4>
-                <hr />
-                <a href="proyecto-nuevo.html">
-                  Hacé click aquí para comenzar un nuevo proyecto
-                </a>
-              </div>
+              <DashboardLinkBox />
+              <DashboardLinkBox />
             </div>
             <div className="col-lg-1"></div>
           </div>
