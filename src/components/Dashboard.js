@@ -2,6 +2,8 @@ import React from "react";
 import "bootstrap/dist/css/bootstrap.css";
 import "./Dashboard.css";
 
+import DashboardProyectsTable from "./DashboardProjectsTable";
+
 class Dashboard extends React.Component {
   render() {
     return (
@@ -43,28 +45,7 @@ class Dashboard extends React.Component {
           <div className="row">
             <div className="col-lg-1"></div>
             <div className="col-lg-7">
-              <div className="start-box dashboard-projects-table">
-                <h4>Mis Proyectos</h4>
-                <hr />
-                <div className="container-fluid">
-                  <table className="table table-sm table-striped table-striped-orange table-borderless table-hover">
-                    <thead id="box-proyectos-thead">
-                      <tr>
-                        <td>{"Id"}</td>
-                        <td>{"Nombre del proyecto"}</td>
-                        <td>{"Responsable"}</td>
-                      </tr>
-                    </thead>
-                    <tbody id="body-tabla-proyectos">
-                      <tr>
-                        <td>{"Sin datos"}</td>
-                        <td>{"Sin datos"}</td>
-                        <td>{"Sin datos"}</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-              </div>
+              <DashboardProyectsTable />
             </div>
             <div className="col-lg-3" id="box-nuevo-reporte">
               <div className="start-box dashboard-link-box">
