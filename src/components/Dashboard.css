@@ -3,19 +3,44 @@
   min-height: 100vh;
 }
 
-.dashboard-header {
-  background-color: blue;
+.dashboard-header-box {
+  /* background-color: blue; */
   color: white;
+  padding: 10px;
+}
+
+.dashboard-header-box h1 {
+  font-size: 3em;
+  color: rgb(89, 224, 168);
+}
+
+.dashboard-header-box h3 {
+  font-size: 2em;
+  color: rgb(126, 153, 142);
 }
 
 .dashboard-projects-table {
-  background-color: red;
+  /* background-color: red; */
+  color: white;
+  padding: 10px;
+}
+
+.dashboard-projects-table h4 {
+  font-size: 1.6em;
+  color: rgb(248, 161, 79);
 }
 
 .dashboard-user-box {
-  background-color: grey;
+  /* background-color: grey; */
+  padding: 10px;
 }
 
 .dashboard-link-box {
   background-color: chartreuse;
+  padding: 10px;
+}
+
+.start-box {
+  margin: 10px;
+  color: white;
 }
