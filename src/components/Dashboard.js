@@ -4,6 +4,7 @@ import "./Dashboard.css";
 
 import DashboardProyectsTable from "./DashboardProjectsTable";
 import DashboardLinkBox from "./DashboardLinkBox";
+import DashboardUserBox from "./DashboardUserBox";
 
 class Dashboard extends React.Component {
   render() {
@@ -23,21 +24,7 @@ class Dashboard extends React.Component {
               </div>
             </div>
             <div className="col-lg-3">
-              <div className="start-box dashboard-user-box">
-                <h5>Peter Cantropus</h5>
-                <div id="cont-usuario">
-                  <div id="cont-data-usuario">
-                    <ul>
-                      <li>Dato 1</li>
-                      <li>Dato 2</li>
-                      <li>Dato 3</li>
-                    </ul>
-                  </div>
-                  <div id="cont-avatar">
-                    <img src="./img/usuario.svg" alt="avatar" />
-                  </div>
-                </div>
-              </div>
+              <DashboardUserBox />
             </div>
             <div className="col-lg-1"></div>
           </div>
