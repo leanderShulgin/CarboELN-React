@@ -49,8 +49,14 @@ class Dashboard extends React.Component {
               <DashboardProyectsTable />
             </div>
             <div className="col-lg-3" id="box-nuevo-reporte">
-              <DashboardLinkBox />
-              <DashboardLinkBox />
+              <DashboardLinkBox
+                headerTitle="Nuevo Reporte"
+                bodyText="Haz click aquí para comenzar un nuevo reporte"
+              />
+              <DashboardLinkBox
+                headerTitle="Nuevo Proyecto"
+                bodyText="Haz click aquí para comenzar un nuevo proyecto"
+              />
             </div>
             <div className="col-lg-1"></div>
           </div>

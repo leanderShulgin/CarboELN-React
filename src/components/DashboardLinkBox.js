@@ -6,11 +6,9 @@ class DashboardLinkBox extends React.Component {
   render() {
     return (
       <div className="start-box dashboard-link-box">
-        <h4>Nuevo Reporte</h4>
+        <h4>{this.props.headerTitle}</h4>
         <hr />
-        <a href="reporte-editar.html">
-          Hacé click aquí para comenzar un nuevo reporte
-        </a>
+        <a href="reporte-editar.html">{this.props.bodyText}</a>
       </div>
     );
   }
