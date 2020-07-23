@@ -9,12 +9,24 @@ const DashboardUserBox = (props) => {
       <div id="cont-usuario">
         <div id="cont-data-usuario">
           <ul>
-            <li>Nombre: {props.user.name}</li>
-            <li>Apellido: {props.user.lastname} </li>
-            <li>Email: {props.user.email} </li>
-            <li>Sector: {props.user.sector} </li>
-            <li>Posición: {props.user.position} </li>
-            <li>Rol: {props.user.role} </li>
+            <li>
+              <strong>Nombre: </strong> {props.user.name}
+            </li>
+            <li>
+              <strong>Apellido: </strong> {props.user.lastname}
+            </li>
+            <li>
+              <strong>Email: </strong> {props.user.email}
+            </li>
+            <li>
+              <strong>Sector:</strong> {props.user.sector}
+            </li>
+            <li>
+              <strong>Posición:</strong> {props.user.position}
+            </li>
+            <li>
+              <strong>Rol:</strong> {props.user.role}
+            </li>
           </ul>
         </div>
         <div id="cont-avatar">

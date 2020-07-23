@@ -1,7 +1,7 @@
 const sampleUsers = [
   {
     _id: "USR000001",
-    username: "Peter.Cantropus",
+    username: "Peter C.",
     name: "Peter",
     lastname: "Cantropus",
     birthdate: "23-01-1990",
