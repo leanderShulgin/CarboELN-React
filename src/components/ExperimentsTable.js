@@ -7,7 +7,7 @@ import "./ExperimentsTable.css";
 const ExperimentsTable = () => {
   return (
     <div className="experiments-table">
-      <h4>Experimentos</h4>
+      <h3>Experiments</h3>
       <hr />
       <div className="container-fluid table-responsive">
         <table className="table table-sm table-striped table-striped-dark table-borderless table-hover">

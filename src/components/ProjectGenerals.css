@@ -1,0 +1,33 @@
+.project-generals {
+  color: rgb(238, 238, 238);
+  padding: 20px 0;
+}
+
+.project-generals h3 {
+  color: rgb(245, 139, 18);
+  font-size: 1.7em;
+}
+
+.project-generals ul {
+  font-size: 1em;
+}
+.project-generals li {
+  font-size: 0.7em;
+}
+
+@media only screen and (min-width: 768px) {
+  .project-generals h3 {
+    font-size: 1.7em;
+  }
+
+  .project-generals ul {
+    font-size: 1em;
+  }
+  .project-generals li {
+    font-size: 0.9em;
+  }
+
+  .project-generals h4 {
+    font-size: 1.6em;
+  }
+}

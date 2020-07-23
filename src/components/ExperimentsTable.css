@@ -1,22 +1,23 @@
 .experiments-table {
-    padding: 20px 0px;
+  padding: 20px 0px;
 }
 
-
 .experiments-table h4 {
-    color: rgb(126, 153, 142);
-    /* padding: 10px 20px; */
+  color: rgb(178, 199, 192);
+  /* padding: 10px 20px; */
 }
 
 .experiments-table table {
-    color: rgb(231, 228, 228);
-    background-color: rgb(39, 36, 34);
-    font-size: 0.7em;
+  color: rgb(231, 228, 228);
+  background-color: rgb(39, 36, 34);
+  font-size: 0.7em;
 }
 
-
 @media only screen and (min-width: 768px) {
-    .experiments-table table {
-        font-size: 0.9em;
-    }
+  .experiments-table table {
+    font-size: 0.9em;
+  }
+  .experiments-table h3 {
+    font-size: 1.5em;
+  }
 }
