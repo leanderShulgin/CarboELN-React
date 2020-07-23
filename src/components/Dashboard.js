@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.css";
 import "./Dashboard.css";
 
+import sampleUsers from "../samples/sampleUsers";
+
 import DashboardProyectsTable from "./DashboardProjectsTable";
 import DashboardLinkBox from "./DashboardLinkBox";
 import DashboardUserBox from "./DashboardUserBox";
@@ -23,7 +25,7 @@ const Dashboard = () => {
             </div>
           </div>
           <div className="col-lg-3">
-            <DashboardUserBox />
+            <DashboardUserBox user={sampleUsers[0]}/>
           </div>
           <div className="col-lg-1"></div>
         </div>
