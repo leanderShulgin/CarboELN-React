@@ -7,7 +7,7 @@ const DashboardProjectsTable = (props) => {
     <div className="start-box dashboard-projects-table">
       <h4>Mis Proyectos</h4>
       <hr />
-      <div className="container-fluid pepito table-responsive">
+      <div className="container-fluid table-responsive">
         <table className="table table-sm table-striped table-striped-dark table-borderless table-hover">
           <thead id="box-proyectos-thead">
             <tr>
