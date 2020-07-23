@@ -1,0 +1,42 @@
+.project-viewer {
+    padding: 20px;
+}
+
+.project-viewer h1 {
+    font-size: 1.5em;
+}
+
+.project-viewer h2 {
+    font-size: 1.3em;
+}
+
+.project-viewer h3 {
+    font-size: 1.2em;
+}
+
+.project-viewer h4 {
+    font-size: 1.1em;
+}
+
+
+@media only screen and (min-width: 768px) {
+    .project-viewer {
+        padding: 20px;
+    }
+    
+    .project-viewer h1 {
+        font-size: 2em;
+    }
+    
+    .project-viewer h2 {
+        font-size: 1.6em;
+    }
+    
+    .project-viewer h3 {
+        font-size: 1.5em;
+    }
+    
+    .project-viewer h4 {
+        font-size: 1.3em;
+    }
+}

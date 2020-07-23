@@ -1,19 +1,21 @@
+/* Muestra una lista de los experimentos en forma de tabla */
+
 import React from "react";
 import "bootstrap/dist/css/bootstrap.css";
-import "./DashboardProjectsTable.css";
+import "./ExperimentsTable.css";
 
-const DashboardProjectsTable = (props) => {
+const ExperimentsTable = () => {
   return (
-    <div className="start-box dashboard-projects-table">
-      <h4>Mis Proyectos</h4>
+    <div className="experiments-table">
+      <h4>Experimentos</h4>
       <hr />
       <div className="container-fluid table-responsive">
         <table className="table table-sm table-striped table-striped-dark table-borderless table-hover">
           <thead id="box-proyectos-thead">
             <tr>
-              <td>{"Id"}</td>
-              <td>{"Nombre del proyecto"}</td>
-              <td>{"Responsable"}</td>
+              <td>{"Numero"}</td>
+              <td>{"Objetivo"}</td>
+              <td>{"Conclusion"}</td>
             </tr>
           </thead>
           <tbody id="body-tabla-proyectos">
@@ -29,4 +31,4 @@ const DashboardProjectsTable = (props) => {
   );
 };
 
-export default DashboardProjectsTable;
+export default ExperimentsTable;

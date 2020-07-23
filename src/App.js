@@ -4,6 +4,7 @@ import "./App.css";
 import Dashboard from "./components/Dashboard";
 import Login from "./components/Login";
 import Register from "./components/Register";
+import ProjectViewer from "./components/ProjectViewer";
 
 // function App() {
 //   return <Dashboard />;
@@ -11,9 +12,10 @@ import Register from "./components/Register";
 
 class App extends React.Component {
   render() {
-    return <Dashboard />;
+    // return <Dashboard />;
     // return <Login />;
     // return <Register />;
+    return <ProjectViewer />;
   }
 }
 
