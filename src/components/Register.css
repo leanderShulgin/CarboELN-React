@@ -1,0 +1,25 @@
+h1 {
+  color: rgb(89, 224, 168);
+}
+h3 {
+  font-size: 1.5em;
+  color: rgb(245, 139, 18);
+}
+
+label {
+  font-size: 0.9em;
+  color: white;
+}
+
+.register-box {
+  background-color: rgb(50, 61, 61);
+  padding: 10px;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.register-submit {
+  background-color: rgb(245, 139, 18);
+  border-color: rgb(34, 31, 27);
+  color: rgb(34, 32, 30);
+}
