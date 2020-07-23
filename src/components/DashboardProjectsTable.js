@@ -1,7 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.css";
 import "./DashboardProjectsTable.css";
-
 
 const DashboardProjectsTable = (props) => {
   return (
