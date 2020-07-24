@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.css";
 import "./Dashboard.css";
 
-import sampleUsers from "../samples/sampleUsers";
+import sampleUsers from "../../samples/sampleUsers";
 
 import DashboardProyectsTable from "./DashboardProjectsTable";
 import DashboardLinkBox from "./DashboardLinkBox";

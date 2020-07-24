@@ -9,7 +9,7 @@ const ExperimentsTable = () => {
     <div className="experiments-table">
       <h3>Experiments</h3>
       <hr />
-      <div className="container-fluid table-responsive">
+      <div className="container-fluid table-responsive table-container">
         <table className="table table-sm table-striped table-striped-dark table-borderless table-hover">
           <thead id="box-proyectos-thead">
             <tr>
