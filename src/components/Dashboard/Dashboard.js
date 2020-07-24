@@ -41,6 +41,7 @@ const Dashboard = () => {
               headerTitle="Nuevo Reporte"
               bodyText="Haz click aquí para comenzar un nuevo reporte"
             />
+            <hr />
             <DashboardLinkBox
               headerTitle="Nuevo Proyecto"
               bodyText="Haz click aquí para comenzar un nuevo proyecto"
