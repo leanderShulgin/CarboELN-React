@@ -12,7 +12,6 @@ const ExperimentEditor = () => {
   return (
     <div
       className="container-fluid main-container experiment-editor"
-      id="main-container"
     >
       <div className="container">
         <nav className="navbar fixed-top navbar-dark bg-dark">

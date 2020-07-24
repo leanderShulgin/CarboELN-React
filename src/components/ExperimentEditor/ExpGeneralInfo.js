@@ -2,12 +2,14 @@ import React from "react";
 import "bootstrap/dist/css/bootstrap.css";
 import "./ExpGeneralInfo.css";
 
+import TextAreaField from "../General/TextAreaField";
+
 // import sampleUsers from "../../samples/sampleUsers";
 
 const ExpGeneralInfo = () => {
   return (
     <div>
-      <div className="row" id="exped-general-info">
+      <div className="row exped-general-info">
         <div className="col-lg-1"></div>
         <div className="col-md-4 col-lg-4">
           <h3>General Info </h3>
@@ -56,14 +58,8 @@ const ExpGeneralInfo = () => {
       <div className="row" id="exped-mat-met">
         <div className="col-lg-1"></div>
         <div className="col-lg-10">
-          <div className="form-group">
-            <h4>Abstract</h4>
-            <textarea className="form-control" cols="10" rows="5"></textarea>
-          </div>
-          <div className="form-group">
-            <h4>Introduction</h4>
-            <textarea className="form-control" cols="10" rows="5"></textarea>
-          </div>
+          <TextAreaField title="Abstract" rows="4" />
+          <TextAreaField title="Introduction" rows="4" />
         </div>
         <div className="col-lg-1"></div>
       </div>
