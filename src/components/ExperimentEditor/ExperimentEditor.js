@@ -6,6 +6,7 @@ import sampleUsers from "../../samples/sampleUsers";
 
 import DashboardUserBox from "../Dashboard/DashboardUserBox";
 import ExpGeneralInfo from "./ExpGeneralInfo";
+import MatsAndMethods from "./MatsAndMethods";
 
 const ExperimentEditor = () => {
   return (
@@ -37,6 +38,7 @@ const ExperimentEditor = () => {
         </div>
       </header>
       <ExpGeneralInfo />
+      <MatsAndMethods />
     </div>
   );
 };

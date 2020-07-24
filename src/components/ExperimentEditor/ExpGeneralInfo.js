@@ -57,11 +57,11 @@ const ExpGeneralInfo = () => {
         <div className="col-lg-1"></div>
         <div className="col-lg-10">
           <div className="form-group">
-            <h3>Abstract</h3>
+            <h4>Abstract</h4>
             <textarea className="form-control" cols="10" rows="5"></textarea>
           </div>
           <div className="form-group">
-            <h3>Introduction</h3>
+            <h4>Introduction</h4>
             <textarea className="form-control" cols="10" rows="5"></textarea>
           </div>
         </div>
