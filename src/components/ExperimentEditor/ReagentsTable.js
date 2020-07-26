@@ -2,6 +2,8 @@ import React from "react";
 import "bootstrap/dist/css/bootstrap.css";
 import "./ReagentsTable.css";
 
+import sampleReagents from "../../samples/sampleReagents";
+
 const ReagentsTable = () => {
   return (
     <div>
@@ -30,7 +32,7 @@ const ReagentsTable = () => {
               </tr>
             </thead>
             <tbody>
-              <tr >
+              <tr>
                 <td>Reactivo 1</td>
                 <td>1</td>
                 <td>1</td>
