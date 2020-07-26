@@ -7,12 +7,11 @@ import sampleUsers from "../../samples/sampleUsers";
 import DashboardUserBox from "../Dashboard/DashboardUserBox";
 import ExpGeneralInfo from "./ExpGeneralInfo";
 import MatsAndMethods from "./MatsAndMethods";
+import ReagentsTable from "./ReagentsTable";
 
 const ExperimentEditor = () => {
   return (
-    <div
-      className="container-fluid main-container experiment-editor"
-    >
+    <div className="container-fluid main-container experiment-editor">
       <div className="container">
         <nav className="navbar fixed-top navbar-dark bg-dark">
           <h4>CarbonoELN</h4>
@@ -38,6 +37,7 @@ const ExperimentEditor = () => {
       </header>
       <ExpGeneralInfo />
       <MatsAndMethods />
+      <ReagentsTable />
     </div>
   );
 };

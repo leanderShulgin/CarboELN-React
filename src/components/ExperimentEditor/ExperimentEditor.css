@@ -20,6 +20,7 @@ label {
 .experiment-editor ul,
 p {
   color: rgb(209, 223, 220);
+  font-size: 0.8em;
 }
 
 .experiment-editor textarea,
@@ -40,6 +41,13 @@ p {
   color: rgb(123, 129, 127);
 }
 
+.experiment-editor table {
+  color: red;
+  background-color: #d1cece;
+}
+
+
+
 @media only screen and (min-width: 768px) {
   .experiment-editor textarea,
   .experiment-editor input {
@@ -51,5 +59,9 @@ p {
 
   .experiment-editor h4 {
     font-size: 1.4em;
+  }
+  .experiment-editor ul,
+  .experiment-editor p {
+    font-size: 0.9em;
   }
 }

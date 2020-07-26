@@ -1,0 +1,27 @@
+.reagents-table {
+  background-color: none;
+  border: none;
+  font-size: 0.8em;
+}
+
+.thead-reagents-table {
+  color: white;
+  background: rgb(66, 70, 70);
+
+  font-size: 0.8em;
+}
+
+.reagents-table th, .reagents-table tr {
+  border: none;
+  text-align: center;
+  background-color: rgb(66, 70, 70);
+}
+
+.reagents-table td {
+    border: solid;
+    border-width:1px;
+    border-color: rgb(31, 28, 28);
+    text-align: center;
+    color: rgb(227, 227, 228);
+    background-color: rgb(66, 70, 70);
+  }
