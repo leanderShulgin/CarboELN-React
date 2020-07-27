@@ -4,6 +4,28 @@ import "./ReagentsTable.css";
 
 import sampleReagents from "../../samples/sampleReagents";
 
+/*
+To DO: crear Reagents en el state del parent (ExperimentEditor) y pasarle por props
+la funcion setReagetns a ReagentsTable. 
+
+Dos opciones:
+1) con menú: como está ahora se completa el formulario y al darle un submit se llama
+a setReagents, que actualiza el state del parent y recarga la tabla
+1.b) Que se pueda mostrar y ocultar el menu de edicion. A su vez tiene que haber un boton de
+edicion en cada fila que cargue los datos a ser editados en el menu.
+
+2) Hacer una tabla editable con un boton de agregar fila, se le pone un onChange a cada celda
+de la tabla.
+
+To Do: en vista movil ,mostrar sólo algunas columnas
+Opciones:
+
+1) La mas facil, mostrar solo nombre, cantidad+unidad y relación molar
+
+2) Mostrar un selector de columnas, ver solo columna nombre + la seleccionada
+
+*/
+
 const ReagentsTable = () => {
   return (
     <div>
