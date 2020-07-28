@@ -1,6 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.css";
-import "./ReagentsTable.css";
+import Table from "react-bootstrap/Table";
 
 import sampleReagents from "../../samples/sampleReagents";
 
@@ -25,8 +25,21 @@ Opciones:
 2) Mostrar un selector de columnas, ver solo columna nombre + la seleccionada
 
 */
+const sampleTableHeaders = [
+  "#",
+  "Name",
+  "Description",
+  "Source",
+  "Ammount",
+  "Unit",
+  "Mol. Weight",
+  "Molar ratio",
+];
 
 const ReagentsTable = () => {
+
+  const [tableHeaders, setTableHeaders] = useState(sampleTableHeaders)
+
   return (
     <div>
       <div className="row">
@@ -40,42 +53,55 @@ const ReagentsTable = () => {
         <div className="col-md-1"></div>
         <div className="col-md-10 container table-responsive">
           <h4>Tabla de reactivos</h4>
-          <table className="table table-dark table-sm reagents-table">
-            <thead className="thead-reagents-table">
+
+          <Table
+            striped
+            bordered
+            hover
+            variant="dark"
+            size="sm"
+            responsive="md"
+          >
+            <thead>
               <tr>
-                <th scope="col">Nombre</th>
-                <th scope="col">Origen</th>
-                <th scope="col">masa [g]</th>
-                <th scope="col">Pureza [%p/p]</th>
-                <th scope="col">PM [g/mol]</th>
-                <th scope="col">Moles</th>
-                <th scope="col">RM</th>
-                <th scope="col"></th>
+                {tableHeaders.map((headerName, index) => {
+                  return <th key={index}>{headerName}</th>;
+                })}
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td>Reactivo 1</td>
                 <td>1</td>
-                <td>1</td>
-                <td>1</td>
-                <td>1</td>
-                <td>1</td>
-                <td>1</td>
-                <td>1</td>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>@mdo</td>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>@mdo</td>
+                <td>@mdo</td>
               </tr>
               <tr>
-                <td>1</td>
-                <td>1</td>
-                <td>1</td>
-                <td>1</td>
-                <td>1</td>
-                <td>1</td>
-                <td>1</td>
-                <td>1</td>
+                <td>2</td>
+                <td>Jacob</td>
+                <td>Thornton</td>
+                <td>@fat</td>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>@mdo</td>
+                <td>@mdo</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Larry the Bird</td>
+                <td>@twitter</td>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>@mdo</td>
+                <td>@mdo</td>
+                <td>@mdo</td>
               </tr>
             </tbody>
-          </table>
+          </Table>
           <hr />
         </div>
         <div className="col-md-1"></div>

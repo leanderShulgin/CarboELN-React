@@ -11,7 +11,7 @@ const ExpGeneralInfo = () => {
     <div>
       <div className="row exped-general-info">
         <div className="col-lg-1"></div>
-        <div className="col-md-4 col-lg-4">
+        <div className="col-md-4 col-lg-3">
           <h3>General Info </h3>
 
           <ul>
