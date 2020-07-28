@@ -58,7 +58,7 @@ const ExpGeneralInfo = () => {
       <div className="row" id="exped-mat-met">
         <div className="col-lg-1"></div>
         <div className="col-lg-10">
-          <TextAreaField title="Abstract" rows="4" />
+          <TextAreaField title="Synopsis" rows="4" />
           <TextAreaField title="Introduction" rows="4" />
         </div>
         <div className="col-lg-1"></div>

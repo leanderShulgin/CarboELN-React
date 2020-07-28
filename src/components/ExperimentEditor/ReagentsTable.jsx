@@ -31,8 +31,9 @@ const sampleTableHeaders = [
   "Description",
   "Source",
   "Ammount",
-  "Unit",
+  "Purity",
   "Mol. Weight",
+  "Moles",
   "Molar ratio",
 ];
 
@@ -44,14 +45,13 @@ const ReagentsTable = () => {
       <div className="row">
         <div className="col-lg-1"></div>
         <div className="col-lg-10 columna">
-          <h3>Reactivos</h3>
+          <h3>Reagents</h3>
         </div>
         <div className="col-lg-1"></div>
       </div>
       <div className="row">
         <div className="col-lg-1"></div>
         <div className="col-lg-10">
-          <h4>Tabla de reactivos</h4>
 
           <Table
             striped
@@ -61,6 +61,7 @@ const ReagentsTable = () => {
             size="sm"
             responsive="lg"
             style={styles.table}
+            className="text-center"
           >
             <thead>
               <tr>
@@ -70,36 +71,23 @@ const ReagentsTable = () => {
               </tr>
             </thead>
             <tbody>
-              <tr>
-                <td>1</td>
-                <td>Mark</td>
-                <td>Otto</td>
-                <td>@mdo</td>
-                <td>Mark</td>
-                <td>Otto</td>
-                <td>@mdo</td>
-                <td>@mdo</td>
-              </tr>
-              <tr>
-                <td>2</td>
-                <td>Jacob</td>
-                <td>Thornton</td>
-                <td>@fat</td>
-                <td>Mark</td>
-                <td>Otto</td>
-                <td>@mdo</td>
-                <td>@mdo</td>
-              </tr>
-              <tr>
-                <td>3</td>
-                <td>Larry the Bird</td>
-                <td>@twitter</td>
-                <td>Mark</td>
-                <td>Otto</td>
-                <td>@mdo</td>
-                <td>@mdo</td>
-                <td>@mdo</td>
-              </tr>
+              {sampleReagents.map((reagent, index) => {
+                return (
+                  <tr key={index}>
+                    <td>{index + 1}</td>
+                    <td>{reagent.name}</td>
+                    <td>{reagent.description}</td>
+                    <td>{reagent.source}</td>
+                    <td>
+                      {reagent.ammount} {reagent.unit}
+                    </td>
+                    <td>{reagent.purity}%</td>
+                    <td>{reagent.mw}g/mol</td>
+                    <td>{reagent.moles}</td>
+                    <td>{reagent.molrel}</td>
+                  </tr>
+                );
+              })}
             </tbody>
           </Table>
           <hr />

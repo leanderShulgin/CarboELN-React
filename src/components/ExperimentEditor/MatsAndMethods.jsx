@@ -16,10 +16,6 @@ const MatsAndMethods = () => {
             <textarea className="form-control" cols="10" rows="5"></textarea>
           </div>
           <div className="form-group">
-            <h4>Reagents</h4>
-            <textarea className="form-control" cols="10" rows="5"></textarea>
-          </div>
-          <div className="form-group">
             <h4>Equipment</h4>
             <textarea className="form-control" cols="10" rows="5"></textarea>
           </div>
