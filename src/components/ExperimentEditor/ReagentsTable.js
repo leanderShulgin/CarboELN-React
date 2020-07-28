@@ -37,21 +37,20 @@ const sampleTableHeaders = [
 ];
 
 const ReagentsTable = () => {
-
-  const [tableHeaders, setTableHeaders] = useState(sampleTableHeaders)
+  const [tableHeaders, setTableHeaders] = useState(sampleTableHeaders);
 
   return (
     <div>
       <div className="row">
-        <div className="col-md-1"></div>
-        <div className="col-md-10 columna">
+        <div className="col-lg-1"></div>
+        <div className="col-lg-10 columna">
           <h3>Reactivos</h3>
         </div>
-        <div className="col-md-1"></div>
+        <div className="col-lg-1"></div>
       </div>
       <div className="row">
-        <div className="col-md-1"></div>
-        <div className="col-md-10 container table-responsive">
+        <div className="col-lg-1"></div>
+        <div className="col-lg-10">
           <h4>Tabla de reactivos</h4>
 
           <Table
@@ -60,7 +59,8 @@ const ReagentsTable = () => {
             hover
             variant="dark"
             size="sm"
-            responsive="md"
+            responsive="lg"
+            style={styles.table}
           >
             <thead>
               <tr>
@@ -104,31 +104,31 @@ const ReagentsTable = () => {
           </Table>
           <hr />
         </div>
-        <div className="col-md-1"></div>
+        <div className="col-lg-1"></div>
       </div>
       <div className="row">
-        <div className="col-md-1"></div>
-        <div className="col-md-4">
+        <div className="col-lg-1"></div>
+        <div className="col-md-5 col-lg-4">
           <div className="form-group">
             <label for="scale-factor">Factor de escala: </label>
             <input type="number" id="scale-factor" placeholder="1.0" />
             <button id="btn-scale-experiment">Escalar</button>
           </div>
         </div>
-        <div className="col-md-6"></div>
+        <div className="col-md-7 col-lg-6"></div>
       </div>
-      <div className="col-md-1"></div>
+      <div className="col-lg-1"></div>
       <div className="row">
-        <div className="col-md-1"></div>
-        <div className="col-md-10">
+        <div className="col-lg-1"></div>
+        <div className="col-lg-10">
           <h4>Agregar un reactivo</h4>
         </div>
-        <div className="col-md-1"></div>
+        <div className="col-lg-1"></div>
       </div>
 
       <div>
         <div className="row">
-          <div className="col-md-1"></div>
+          <div className="col-lg-1"></div>
           <div className="col-md-3 columna">
             <div className="form-group">
               <label for="nombre-reactivo">Nombre:</label>
@@ -159,7 +159,7 @@ const ReagentsTable = () => {
               />
             </div>
           </div>
-          <div className="col-md-4 columna">
+          <div className="col-md-5 col-lg-4 columna">
             <div className="form-group">
               <label for="pureza-reactivo">Pureza [%p/p]:</label>
               <input
@@ -210,11 +210,11 @@ const ReagentsTable = () => {
               </select>
             </div>
           </div>
-          <div className="col-md-1"></div>
+          <div className="col-lg-1"></div>
         </div>
         <div className="row">
-          <div className="col-md-1"></div>
-          <div className="col-md-10">
+          <div className="col-lg-1"></div>
+          <div className="col-lg-10">
             <button
               className="custom-btn-dark-blue"
               id="btn-agregar-reactivo"
@@ -223,11 +223,15 @@ const ReagentsTable = () => {
               Agregar reactivo
             </button>
           </div>
-          <div className="col-md-1"></div>
+          <div className="col-lg-1"></div>
         </div>
       </div>
     </div>
   );
+};
+
+const styles = {
+  table: { fontSize: "0.8em" },
 };
 
 export default ReagentsTable;
