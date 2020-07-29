@@ -1,0 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@600&display=swap");
+
+.welcomeCompanyName {
+  font-family: "Mulish", sans-serif;
+  /* color: rgb(56, 70, 64) */
+}
+
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }

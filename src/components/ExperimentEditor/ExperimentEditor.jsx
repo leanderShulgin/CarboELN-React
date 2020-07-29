@@ -14,7 +14,8 @@ const ExperimentEditor = () => {
     <div className="container-fluid main-container experiment-editor">
       <div className="container">
         <nav className="navbar fixed-top navbar-dark bg-dark">
-          <h4>CarbonoELN</h4>
+          {/* <h4>CarbonoELN</h4> */}
+          <img src="./img/name-logo-1.png" height="40" alt=""/>
         </nav>
       </div>
       <header className="exped-header">
