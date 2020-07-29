@@ -25,7 +25,7 @@ const Dashboard = () => {
             </div>
           </div>
           <div className="col-lg-3">
-            <DashboardUserBox user={sampleUsers[0]}/>
+            <DashboardUserBox data={sampleUsers[0]}/>
           </div>
           <div className="col-lg-1"></div>
         </div>

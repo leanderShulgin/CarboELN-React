@@ -28,6 +28,19 @@
   color: #61dafb;
 }
 
+h1 {
+  color: rgb(89, 224, 168);
+}
+h3 {
+  font-size: 1.5em;
+  color: rgb(245, 139, 18);
+}
+
+label {
+  font-size: 0.9em;
+  color: white;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

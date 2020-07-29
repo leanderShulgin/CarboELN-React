@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.css";
 import "./ExpGeneralInfo.css";
 
@@ -6,7 +6,10 @@ import TextAreaField from "../General/TextAreaField";
 
 // import sampleUsers from "../../samples/sampleUsers";
 
-const ExpGeneralInfo = () => {
+const ExpGeneralInfo = (props) => {
+
+  const [data, setData] = useState(props.data);
+  
   return (
     <div>
       <div className="row exped-general-info">
@@ -16,30 +19,38 @@ const ExpGeneralInfo = () => {
 
           <ul>
             <li>
-              <strong>Author: </strong> Peter Cantropus
+              <strong>Author: </strong> {data.creatorName}
             </li>
             <li>
-              <strong>Creation date: </strong> 12/03/2020 14:45
+              <strong>Creation date: </strong> {data.creationDate}
             </li>
             <li>
-              <strong>Project Name: </strong> My First Project
+              <strong>Project Name: </strong> {data.projectName}
             </li>
             <li>
-              <strong>Project Number: </strong>001
+              <strong>Project Number: </strong> {data.projectNumber}
             </li>
             <li>
-              <strong>Report Number: </strong>001
+              <strong>Report Number: </strong> {data.reportNumber}
             </li>
           </ul>
         </div>
         <div className="col-md-4 col-lg-3">
           <div className="form-group">
             <label>Synthetic route</label>
-            <input type="text" className="form-control"></input>
+            <input
+              type="text"
+              className="form-control"
+              value={data.route}
+            ></input>
           </div>
           <div className="form-group">
             <label>References</label>
-            <input type="text" className="form-control"></input>
+            <input
+              type="text"
+              className="form-control"
+              value={data.references}
+            ></input>
           </div>
         </div>
         <div className="col-md-4 col-lg-3">

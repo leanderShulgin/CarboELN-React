@@ -1,15 +1,4 @@
-h1 {
-  color: rgb(89, 224, 168);
-}
-h3 {
-  font-size: 1.5em;
-  color: rgb(245, 139, 18);
-}
 
-label {
-  font-size: 0.9em;
-  color: white;
-}
 
 .login-box {
   background-color: rgb(50, 61, 61);

@@ -37,8 +37,9 @@ const sampleTableHeaders = [
   "Molar ratio",
 ];
 
-const ReagentsTable = () => {
-  const [tableHeaders, setTableHeaders] = useState(sampleTableHeaders);
+const ReagentsTable = (props) => {
+  const [tableHeaders, setTableHeaders] = useState(props.headers);
+  const [tableData, setTableData] = useState(props.data);
 
   return (
     <div>
@@ -70,7 +71,7 @@ const ReagentsTable = () => {
               </tr>
             </thead>
             <tbody>
-              {sampleReagents.map((reagent, index) => {
+              {tableData.map((reagent, index) => {
                 return (
                   <tr key={index}>
                     <td>{index + 1}</td>

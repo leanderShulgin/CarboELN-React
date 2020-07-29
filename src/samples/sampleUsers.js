@@ -1,7 +1,7 @@
 const sampleUsers = [
   {
     _id: "USR000001",
-    username: "Peter C.",
+    username: "Peter Conchas",
     name: "Peter",
     lastname: "Cantropus",
     birthdate: "23-01-1990",
@@ -10,6 +10,7 @@ const sampleUsers = [
     sector: "R+D",
     role: "user",
     teams: ["project1", "R+D", "Analysts", "Company"],
+    projects: [],
   },
   {
     _id: "USR000002",
@@ -22,6 +23,7 @@ const sampleUsers = [
     sector: "R+D",
     role: "user",
     teams: ["project1", "R+D", "Analysts", "Company"],
+    projects: [],
   },
   {
     _id: "USR000003",
@@ -34,6 +36,7 @@ const sampleUsers = [
     sector: "Analytical Chemistry R+D",
     role: "user",
     teams: ["project4", "AnChemR+D", "Analysts", "Company"],
+    projects: [],
   },
   {
     _id: "USR000004",
@@ -46,6 +49,7 @@ const sampleUsers = [
     sector: "R+D",
     role: "administrator",
     teams: ["project1", "Admins", "R+D", "Analysts", "Company"],
+    projects: [],
   },
   {
     _id: "USR000005",
@@ -58,6 +62,7 @@ const sampleUsers = [
     sector: "R+D",
     role: "user",
     teams: ["project18", "R+D", "Analysts", "Company"],
+    projects: [],
   },
 ];
 

@@ -5,27 +5,27 @@ import "./DashboardUserBox.css";
 const DashboardUserBox = (props) => {
   return (
     <div className="start-box dashboard-user-box">
-      <h5>{props.user.username}</h5>
+      <h5>{props.data.username}</h5>
       <div id="cont-usuario">
         <div id="cont-data-usuario">
           <ul>
             <li>
-              <strong>Nombre: </strong> {props.user.name}
+              <strong>Nombre: </strong> {props.data.name}
             </li>
             <li>
-              <strong>Apellido: </strong> {props.user.lastname}
+              <strong>Apellido: </strong> {props.data.lastname}
             </li>
             <li>
-              <strong>Email: </strong> {props.user.email}
+              <strong>Email: </strong> {props.data.email}
             </li>
             <li>
-              <strong>Sector:</strong> {props.user.sector}
+              <strong>Sector:</strong> {props.data.sector}
             </li>
             <li>
-              <strong>Posición:</strong> {props.user.position}
+              <strong>Posición:</strong> {props.data.position}
             </li>
             <li>
-              <strong>Rol:</strong> {props.user.role}
+              <strong>Rol:</strong> {props.data.role}
             </li>
           </ul>
         </div>
