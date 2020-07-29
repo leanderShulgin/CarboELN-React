@@ -52,7 +52,6 @@ const ReagentsTable = () => {
       <div className="row">
         <div className="col-lg-1"></div>
         <div className="col-lg-10">
-
           <Table
             striped
             bordered
@@ -109,110 +108,106 @@ const ReagentsTable = () => {
       <div className="row">
         <div className="col-lg-1"></div>
         <div className="col-lg-10">
-          <h4>Agregar un reactivo</h4>
+          <h4>Add a reagent</h4>
         </div>
         <div className="col-lg-1"></div>
       </div>
 
       <div>
-        <div className="row">
-          <div className="col-lg-1"></div>
-          <div className="col-md-3 columna">
-            <div className="form-group">
-              <label for="nombre-reactivo">Nombre:</label>
-              <input
-                type="text"
-                name="nombre-reactivo"
-                id="nombre-reactivo"
-                className="form-control"
-              />
+        <form onSubmit="#">
+          <div className="row">
+            <div className="col-lg-1"></div>
+            <div className="col-md-3 columna">
+              <div className="form-group">
+                <label for="nombre-reactivo">Name:</label>
+                <input
+                  type="text"
+                  name="nombre-reactivo"
+                  id="nombre-reactivo"
+                  className="form-control"
+                />
+              </div>
+              <div className="form-group">
+                <label for="origen-reactivo">Source:</label>
+                <input
+                  type="text"
+                  name="origen-reactivo"
+                  id="origen-reactivo"
+                  className="form-control"
+                />
+              </div>
+              <div className="form-group">
+                <label for="masa-reactivo">Ammount:</label>
+                <input
+                  type="number"
+                  step="any"
+                  name="masa-reactivo"
+                  id="masa-reactivo"
+                  className="form-control"
+                />
+              </div>
             </div>
-            <div className="form-group">
-              <label for="origen-reactivo">Origen:</label>
-              <input
-                type="text"
-                name="origen-reactivo"
-                id="origen-reactivo"
-                className="form-control"
-              />
+            <div className="col-md-5 col-lg-4 columna">
+              <div className="form-group">
+                <label for="pureza-reactivo">Purity [%w/w]:</label>
+                <input
+                  type="number"
+                  step="any"
+                  name="pureza-reactivo"
+                  id="pureza-reactivo"
+                  className="form-control"
+                />
+              </div>
+
+              <div className="form-group">
+                <label for="pm-reactivo">Molecular weight [g/mol]:</label>
+                <input
+                  type="number"
+                  step="any"
+                  name="pm-reactivo"
+                  id="pm-reactivo"
+                  className="form-control"
+                />
+              </div>
+              <div className="form-group">
+                <label for="moles-reactivo">Moles:</label>
+                <input
+                  type="number"
+                  name="moles-reactivo"
+                  id="moles-reactivo"
+                  className="form-control"
+                />
+              </div>
             </div>
-            <div className="form-group">
-              <label for="masa-reactivo">Masa [g]:</label>
-              <input
-                type="number"
-                step="any"
-                name="masa-reactivo"
-                id="masa-reactivo"
-                className="form-control"
-              />
-            </div>
-          </div>
-          <div className="col-md-5 col-lg-4 columna">
-            <div className="form-group">
-              <label for="pureza-reactivo">Pureza [%p/p]:</label>
-              <input
-                type="number"
-                step="any"
-                name="pureza-reactivo"
-                id="pureza-reactivo"
-                className="form-control"
-              />
+            <div className="col-md-3 columna">
+              <div className="form-group">
+                <label for="rm-reactivo">Molar ratio:</label>
+                <input
+                  type="number"
+                  step="any"
+                  name="rm-reactivo"
+                  id="rm-reactivo"
+                  className="form-control"
+                />
+              </div>
             </div>
 
-            <div className="form-group">
-              <label for="pm-reactivo">PM [g/mol]:</label>
-              <input
-                type="number"
-                step="any"
-                name="pm-reactivo"
-                id="pm-reactivo"
-                className="form-control"
-              />
-            </div>
-            <div className="form-group">
-              <label for="moles-reactivo">Moles:</label>
-              <input
-                type="number"
-                name="moles-reactivo"
-                id="moles-reactivo"
-                className="form-control"
-              />
-            </div>
+            <div className="col-lg-1"></div>
           </div>
-          <div className="col-md-3 columna">
-            <div className="form-group">
-              <label for="rm-reactivo">Relación molar:</label>
-              <input
-                type="number"
-                step="any"
-                name="rm-reactivo"
-                id="rm-reactivo"
-                className="form-control"
-              />
+          <div className="row">
+            <div className="col-lg-1"></div>
+            <div className="col-lg-10">
+              <button
+                className="custom-btn-dark-blue form-control"
+                id="btn-agregar-reactivo"
+                type="submit"
+              >
+                Add reagent
+              </button>
             </div>
-            <div className="form-group">
-              <label for="rm-reactivo">Reactivo limitante? :</label>
-              <select name="limitante" id="limitante">
-                <option value="false">No</option>
-                <option value="true">Si</option>Si
-              </select>
-            </div>
+            <div className="col-lg-1"></div>
           </div>
-          <div className="col-lg-1"></div>
-        </div>
-        <div className="row">
-          <div className="col-lg-1"></div>
-          <div className="col-lg-10">
-            <button
-              className="custom-btn-dark-blue"
-              id="btn-agregar-reactivo"
-              onclick="crearReactivo()"
-            >
-              Agregar reactivo
-            </button>
-          </div>
-          <div className="col-lg-1"></div>
-        </div>
+        </form>
       </div>
     </div>
   );
