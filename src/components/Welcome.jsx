@@ -2,7 +2,7 @@ import React from "react";
 import "bootstrap/dist/css/bootstrap.css";
 import "./Welcome.css";
 
-const Welcome = () => {
+const Welcome = (props) => {
   return (
     <div className="main-container container-fluid">
       <div className="row">
@@ -22,7 +22,13 @@ const Welcome = () => {
               Carbo ELN
             </h1>
             <div clasName="form-group">
-              <button className="form-control" style={style.button}>
+              <button
+                className="form-control"
+                style={style.button}
+                onClick={() => {
+                  props.setPage("dashboard");
+                }}
+              >
                 Ingresar
               </button>
             </div>
@@ -51,7 +57,7 @@ const style = {
   logo: {
     width: "80%",
     margin: "auto",
-    animation: "rotation 10s infinite linear"
+    animation: "rotation 10s infinite linear",
   },
 };
 
