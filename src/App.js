@@ -19,7 +19,7 @@ const App = () => {
     case "register":
       return <Register />;
     case "experiment-editor":
-      return <ExperimentEditor />;
+      return <ExperimentEditor setPage={setPage} />;
     case "project-viewer":
       return <ProjectViewer />;
     default:

@@ -26,7 +26,7 @@ const Welcome = (props) => {
                 className="form-control"
                 style={style.button}
                 onClick={() => {
-                  props.setPage("dashboard");
+                  props.setPage("experiment-editor");
                 }}
               >
                 Ingresar
