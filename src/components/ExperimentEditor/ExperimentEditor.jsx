@@ -32,9 +32,40 @@ const ExperimentEditor = () => {
   return (
     <div className="container-fluid main-container experiment-editor">
       <div className="container">
-        <nav className="navbar fixed-top navbar-dark bg-dark">
-          {/* <h4>CarbonoELN</h4> */}
+        {/* <nav className="navbar fixed-top navbar-dark bg-dark">
           <img src="./img/logo-1.png" height="36" alt="" />
+        </nav> */}
+        <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
+          <a class="navbar-brand" href="#">
+            <img src="./img/logo-1.png" height="36" alt="" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#collapsibleNavbar"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  Link
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  Link
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  Link
+                </a>
+              </li>
+            </ul>
+          </div>
         </nav>
       </div>
       <header className="exped-header">

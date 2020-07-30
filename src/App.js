@@ -13,7 +13,7 @@ const App = () => {
 
   switch (page) {
     case "dashboard":
-      return <Dashboard />;
+      return <Dashboard setPage={setPage} />;
     case "login":
       return <Login />;
     case "register":

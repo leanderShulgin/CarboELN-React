@@ -7,11 +7,15 @@ import sampleUsers from "../../samples/sampleUsers";
 import DashboardProyectsTable from "./DashboardProjectsTable";
 import DashboardLinkBox from "./DashboardLinkBox";
 import DashboardUserBox from "./DashboardUserBox";
+import NavBarSidebar from "../General/NavBarSidebar.jsx";
 
-const Dashboard = () => {
+const Dashboard = (props) => {
   return (
     <div className="container-fluid main-container" id="main-container">
-      <header>
+      
+      <NavBarSidebar setPage={props.setPage} />
+
+      <header style={{ paddingTop: "60px" }}>
         <div className="row">
           <div className="col-lg-1"></div>
           <div className="col-lg-7">
@@ -25,7 +29,7 @@ const Dashboard = () => {
             </div>
           </div>
           <div className="col-lg-3">
-            <DashboardUserBox data={sampleUsers[0]}/>
+            <DashboardUserBox data={sampleUsers[0]} />
           </div>
           <div className="col-lg-1"></div>
         </div>
