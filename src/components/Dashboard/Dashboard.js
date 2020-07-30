@@ -12,8 +12,7 @@ import NavBarSidebar from "../General/NavBarSidebar.jsx";
 const Dashboard = (props) => {
   return (
     <div className="container-fluid main-container" id="main-container">
-      
-      <NavBarSidebar setPage={props.setPage} />
+      <NavBarSidebar fixed="top" setPage={props.setPage} logoSendsTo={"welcome"} />
 
       <header style={{ paddingTop: "60px" }}>
         <div className="row">
