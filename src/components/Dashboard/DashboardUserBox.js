@@ -5,7 +5,7 @@ import "./DashboardUserBox.css";
 const DashboardUserBox = (props) => {
   return (
     <div className="start-box dashboard-user-box">
-      <h5>{props.data.username}</h5>
+      <h3>{props.data.username}</h3>
       <div id="cont-usuario">
         <div id="cont-data-usuario">
           <ul>

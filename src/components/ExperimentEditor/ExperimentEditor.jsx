@@ -43,10 +43,7 @@ const ExperimentEditor = () => {
           <div className="col-lg-7">
             <div className="exped-header-box">
               <h1 id="titulo-dashboard">Experiment Editor</h1>
-              <h3>Project One - Experiment 34</h3>
-              <p className="texto-exped">
-                Use this tool to register your experiment
-              </p>
+              <h2>Project One - Experiment 34</h2>
             </div>
           </div>
           <div className="col-lg-3">

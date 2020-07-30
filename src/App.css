@@ -32,6 +32,11 @@
 h1 {
   color: rgb(84, 209, 203);
 }
+
+h2 {
+  font-size: 1.7em;
+  color: rgb(144, 163, 163);
+}
 h3 {
   font-size: 1.5em;
   color: rgb(245, 139, 18);
