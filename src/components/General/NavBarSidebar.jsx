@@ -21,16 +21,40 @@ const NavBarSidebar = (props) => {
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="mr-auto">
-          <button className="btn" style={style.NavBarButton}>
+          <button
+            className="btn"
+            onClick={() => {
+              props.setPage("dashboard");
+            }}
+            style={style.NavBarButton}
+          >
             Dashboard
           </button>
-          <button className="btn" style={style.NavBarButton}>
+          <button
+            className="btn"
+            onClick={() => {
+              props.setPage("login");
+            }}
+            style={style.NavBarButton}
+          >
             Login
           </button>
-          <button className="btn" style={style.NavBarButton}>
+          <button
+            className="btn"
+            onClick={() => {
+              props.setPage("register");
+            }}
+            style={style.NavBarButton}
+          >
             Register
           </button>
-          <button className="btn" style={style.NavBarButton}>
+          <button
+            className="btn"
+            onClick={() => {
+              props.setPage("experiment-editor");
+            }}
+            style={style.NavBarButton}
+          >
             Experiment
           </button>
           <button className="btn" style={style.NavBarButton}>
