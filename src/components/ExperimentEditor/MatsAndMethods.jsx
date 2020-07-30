@@ -12,11 +12,11 @@ const MatsAndMethods = () => {
         <div className="col-lg-10">
             <h3>Materials and Methods</h3>
           <div className="form-group">
-            <h4>Lab SetUp</h4>
+            <label>Lab SetUp</label>
             <textarea className="form-control" cols="10" rows="5"></textarea>
           </div>
           <div className="form-group">
-            <h4>Equipment</h4>
+            <label>Equipment</label>
             <textarea className="form-control" cols="10" rows="5"></textarea>
           </div>
         </div>

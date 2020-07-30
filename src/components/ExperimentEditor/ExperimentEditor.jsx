@@ -34,7 +34,7 @@ const ExperimentEditor = () => {
       <div className="container">
         <nav className="navbar fixed-top navbar-dark bg-dark">
           {/* <h4>CarbonoELN</h4> */}
-          <img src="./img/logo-1.png" height="40" alt="" />
+          <img src="./img/logo-1.png" height="36" alt="" />
         </nav>
       </div>
       <header className="exped-header">
