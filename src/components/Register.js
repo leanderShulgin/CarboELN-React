@@ -2,7 +2,7 @@ import React from "react";
 import "bootstrap/dist/css/bootstrap.css";
 import "./Register.css";
 
-const Register = () => {
+const Register = (props) => {
   return (
     <div className="container-fluid main-container">
       <div className="row">
@@ -33,12 +33,14 @@ const Register = () => {
                 ></input>
               </div>
               <div className="form-group">
-                <input
+                <button
                   type="submit"
-                  id="username"
-                  value="Submit"
                   className="form-control register-submit"
-                ></input>
+                  onClick={(e) => {
+                    e.preventDefault();
+                    props.setPage("dashboard");
+                  }}
+                >SignUp</button>
               </div>
             </form>
           </div>

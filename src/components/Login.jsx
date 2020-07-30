@@ -2,7 +2,7 @@ import React from "react";
 import "bootstrap/dist/css/bootstrap.css";
 import "./Login.css";
 
-const Login = () => {
+const Login = (props) => {
   return (
     <div className="container-fluid main-container">
       <div className="row">
@@ -25,12 +25,14 @@ const Login = () => {
                 ></input>
               </div>
               <div className="form-group">
-                <input
+                <button
                   type="submit"
-                  id="username"
-                  value="Enter"
                   className="form-control login-submit"
-                ></input>
+                  onClick={(e) => {
+                    e.preventDefault();
+                    props.setPage("dashboard");
+                  }}
+                >Sign In</button>
               </div>
             </form>
           </div>

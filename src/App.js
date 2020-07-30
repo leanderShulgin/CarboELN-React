@@ -15,13 +15,13 @@ const App = () => {
     case "dashboard":
       return <Dashboard setPage={setPage} />;
     case "login":
-      return <Login />;
+      return <Login setPage={setPage} />;
     case "register":
-      return <Register />;
+      return <Register setPage={setPage} />;
     case "experiment-editor":
       return <ExperimentEditor setPage={setPage} />;
     case "project-viewer":
-      return <ProjectViewer />;
+      return <ProjectViewer setPage={setPage} />;
     default:
       return <Welcome setPage={setPage} />;
   }
