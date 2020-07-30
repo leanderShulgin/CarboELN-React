@@ -7,9 +7,12 @@ import TextAreaField from "../General/TextAreaField";
 // import sampleUsers from "../../samples/sampleUsers";
 
 const ExpGeneralInfo = (props) => {
-
   const [data, setData] = useState(props.data);
-  
+
+  const handleInputChange = (event) => {
+    setData({ ...data, [event.target.name]: event.target.value });
+  };
+
   return (
     <div>
       <div className="row exped-general-info">
@@ -41,7 +44,9 @@ const ExpGeneralInfo = (props) => {
             <input
               type="text"
               className="form-control"
-              value={data.route}
+              defaultValue={data.route}
+              onChange={handleInputChange}
+              name="route"
             ></input>
           </div>
           <div className="form-group">
@@ -49,18 +54,32 @@ const ExpGeneralInfo = (props) => {
             <input
               type="text"
               className="form-control"
-              value={data.references}
+              defaultValue={data.references}
+              onChange={handleInputChange}
+              name="references"
             ></input>
           </div>
         </div>
         <div className="col-md-4 col-lg-3">
           <div className="form-group">
             <label>Product Name</label>
-            <input type="text" className="form-control"></input>
+            <input
+              type="text"
+              className="form-control"
+              defaultValue={data.productName}
+              onChange={handleInputChange}
+              name="productName"
+            ></input>
           </div>
           <div className="form-group">
             <label>Product Info</label>
-            <input type="text" className="form-control"></input>
+            <input
+              type="text"
+              className="form-control"
+              defaultValue={data.productInfo}
+              onChange={handleInputChange}
+              name="productInfo"
+            ></input>
           </div>
         </div>
         <div className="col-lg-1"></div>
