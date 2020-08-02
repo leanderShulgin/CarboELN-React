@@ -7,12 +7,16 @@ import sampleUsers from "../../samples/sampleUsers";
 import DashboardProyectsTable from "./DashboardProjectsTable";
 import DashboardLinkBox from "./DashboardLinkBox";
 import DashboardUserBox from "./DashboardUserBox";
-import NavBarSidebar from "../General/NavBarSidebar.jsx";
+import NavBarMain from "../General/NavBarMain.jsx";
 
 const Dashboard = (props) => {
   return (
     <div className="container-fluid main-container" id="main-container">
-      <NavBarSidebar fixed="top" setPage={props.setPage} logoSendsTo={"welcome"} />
+      <NavBarMain
+        fixed="top"
+        setPage={props.setPage}
+        logoSendsTo={"welcome"}
+      />
 
       <header style={{ paddingTop: "60px" }}>
         <div className="row">

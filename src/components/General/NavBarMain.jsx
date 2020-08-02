@@ -4,6 +4,14 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 
+/* FONT AWESOME ICONS:  */
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faHome } from "@fortawesome/free-solid-svg-icons";
+import { faSignInAlt } from "@fortawesome/free-solid-svg-icons";
+import { faUserPlus } from "@fortawesome/free-solid-svg-icons";
+import { faFlask } from "@fortawesome/free-solid-svg-icons";
+import { faBook } from "@fortawesome/free-solid-svg-icons";
+
 const NavBarSidebar = (props) => {
   return (
     <Navbar bg="dark" variant="dark" expand="lg">
@@ -28,7 +36,7 @@ const NavBarSidebar = (props) => {
             }}
             style={style.NavBarButton}
           >
-            Dashboard
+            <FontAwesomeIcon icon={faHome} /> Dashboard
           </button>
           <button
             className="btn"
@@ -37,7 +45,7 @@ const NavBarSidebar = (props) => {
             }}
             style={style.NavBarButton}
           >
-            Login
+            <FontAwesomeIcon icon={faSignInAlt} /> Login
           </button>
           <button
             className="btn"
@@ -46,7 +54,7 @@ const NavBarSidebar = (props) => {
             }}
             style={style.NavBarButton}
           >
-            Register
+            <FontAwesomeIcon icon={faUserPlus} /> Register
           </button>
           <button
             className="btn"
@@ -55,10 +63,11 @@ const NavBarSidebar = (props) => {
             }}
             style={style.NavBarButton}
           >
-            Experiment
+            {" "}
+            <FontAwesomeIcon icon={faFlask} /> Experiment
           </button>
           <button className="btn" style={style.NavBarButton}>
-            Project
+            <FontAwesomeIcon icon={faBook} /> Project
           </button>
 
           {/* <NavDropdown title="Dropdown" id="basic-nav-dropdown">

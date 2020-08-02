@@ -12,7 +12,7 @@ import DashboardUserBox from "../Dashboard/DashboardUserBox";
 import ExpGeneralInfo from "./ExpGeneralInfo";
 import MatsAndMethods from "./MatsAndMethods";
 import ReagentsTable from "./ReagentsTable";
-import NavBarSidebar from "../General/NavBarSidebar.jsx";
+import NavBarMain from "../General/NavBarMain.jsx";
 
 const ExperimentEditor = (props) => {
   const [user, setUser] = useState(sampleUsers[0]);
@@ -32,7 +32,7 @@ const ExperimentEditor = (props) => {
 
   return (
     <div className="container-fluid main-container experiment-editor">
-      <NavBarSidebar fixed="top" setPage={props.setPage} logoSendsTo={"dashboard"} />
+      <NavBarMain fixed="top" setPage={props.setPage} logoSendsTo={"dashboard"} />
 
       <header className="exped-header">
         <div className="row">
