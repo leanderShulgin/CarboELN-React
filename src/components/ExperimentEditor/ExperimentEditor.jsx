@@ -10,8 +10,8 @@ import sampleGeneralInfo from "../../samples/sampleGeneralInfo";
 
 import DashboardUserBox from "../Dashboard/DashboardUserBox";
 import ExpGeneralInfo from "./ExpGeneralInfo";
-import MatsAndMethods from "./MatsAndMethods";
 import ReagentsTable from "./ReagentsTable";
+import ReactionEditor from "./ReactionEditor";
 import NavBarMain from "../General/NavBarMain.jsx";
 import NavBarSecondary from "../General/NavBarSecondary.jsx";
 
@@ -19,6 +19,8 @@ const ExperimentEditor = (props) => {
   const [user, setUser] = useState(sampleUsers[0]);
   const [reagents, setReagents] = useState(sampleReagents);
   const [generalInfo, setGeneralInfo] = useState(sampleGeneralInfo);
+  const [subPage, setSubpage] = useState("");
+
   const sampleTableHeaders = [
     "#",
     "Name",
@@ -31,10 +33,25 @@ const ExperimentEditor = (props) => {
     "Molar ratio",
   ];
 
+  let currentSubpage = <ExpGeneralInfo data={generalInfo} />;
+
+  switch (subPage) {
+    case "reaction":
+      currentSubpage = <ReactionEditor />;
+      break;
+    case "reagents":
+      currentSubpage = (
+        <ReagentsTable headers={sampleTableHeaders} data={reagents} />
+      );
+      break;
+    default:
+      currentSubpage = <ExpGeneralInfo data={generalInfo} />;
+  }
+
   return (
     <div className="container-fluid main-container experiment-editor">
       <NavBarMain setPage={props.setPage} logoSendsTo={"dashboard"} />
-      <NavBarSecondary />
+      <NavBarSecondary setSubpage={setSubpage} />
 
       <header className="exped-header">
         <div className="row">
@@ -51,9 +68,8 @@ const ExperimentEditor = (props) => {
           <div className="col-lg-1"></div>
         </div>
       </header>
-      <ExpGeneralInfo data={generalInfo} />
-      <MatsAndMethods />
-      <ReagentsTable headers={sampleTableHeaders} data={reagents} />
+      {currentSubpage}
+      <div style={{ height: "50px" }}></div>
     </div>
   );
 };

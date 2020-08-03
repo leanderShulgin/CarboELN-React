@@ -33,7 +33,6 @@ const sampleTableHeaders = [
 const ReagentsTable = (props) => {
   const [tableHeaders, setTableHeaders] = useState(props.headers);
   const [tableData, setTableData] = useState(props.data);
-  const [subpage, setSubpage] = useState("general")
 
   return (
     <div>

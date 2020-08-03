@@ -1,8 +1,6 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.css";
-import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import NavDropdown from "react-bootstrap/NavDropdown";
 
 /* FONT AWESOME ICONS:  */
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -18,7 +16,7 @@ const NavBarSidebar = (props) => {
       <button
         className="btn"
         onClick={() => {
-          props.setPage("dashboard");
+          props.setSubpage("");
         }}
         style={style.NavBarButton}
       >
@@ -27,7 +25,7 @@ const NavBarSidebar = (props) => {
       <button
         className="btn"
         onClick={() => {
-          props.setPage("login");
+          props.setSubpage("reaction");
         }}
         style={style.NavBarButton}
       >
@@ -36,63 +34,32 @@ const NavBarSidebar = (props) => {
       <button
         className="btn"
         onClick={() => {
-          props.setPage("register");
+          props.setSubpage("reagents");
         }}
         style={style.NavBarButton}
       >
         <FontAwesomeIcon icon={faUserPlus} /> Reagents
       </button>
-      <button
-        className="btn"
-        onClick={() => {
-          props.setPage("experiment-editor");
-        }}
-        style={style.NavBarButton}
-      >
-        {" "}
+      <button className="btn" disabled="true" style={style.NavBarButton}>
         <FontAwesomeIcon icon={faFlask} /> Log
       </button>
-      <button className="btn" style={style.NavBarButton}>
+      <button className="btn" disabled="true" style={style.NavBarButton}>
         <FontAwesomeIcon icon={faBook} /> Results
       </button>
-      <button
-        className="btn"
-        onClick={() => {
-          props.setPage("dashboard");
-        }}
-        style={style.NavBarButton}
-      >
+      <button className="btn" disabled="true" style={style.NavBarButton}>
         <FontAwesomeIcon icon={faHome} /> General
       </button>
-      <button
-        className="btn"
-        onClick={() => {
-          props.setPage("login");
-        }}
-        style={style.NavBarButton}
-      >
+      <button className="btn" disabled="true" style={style.NavBarButton}>
         <FontAwesomeIcon icon={faSignInAlt} /> Reaction
       </button>
-      <button
-        className="btn"
-        onClick={() => {
-          props.setPage("register");
-        }}
-        style={style.NavBarButton}
-      >
+      <button className="btn" disabled="true" style={style.NavBarButton}>
         <FontAwesomeIcon icon={faUserPlus} /> Reagents
       </button>
-      <button
-        className="btn"
-        onClick={() => {
-          props.setPage("experiment-editor");
-        }}
-        style={style.NavBarButton}
-      >
+      <button className="btn" disabled="true" style={style.NavBarButton}>
         {" "}
         <FontAwesomeIcon icon={faFlask} /> Log
       </button>
-      <button className="btn" style={style.NavBarButton}>
+      <button className="btn" disabled="true" style={style.NavBarButton}>
         <FontAwesomeIcon icon={faBook} /> Results
       </button>
     </Navbar>
