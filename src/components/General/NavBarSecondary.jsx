@@ -55,6 +55,46 @@ const NavBarSidebar = (props) => {
       <button className="btn" style={style.NavBarButton}>
         <FontAwesomeIcon icon={faBook} /> Results
       </button>
+      <button
+        className="btn"
+        onClick={() => {
+          props.setPage("dashboard");
+        }}
+        style={style.NavBarButton}
+      >
+        <FontAwesomeIcon icon={faHome} /> General
+      </button>
+      <button
+        className="btn"
+        onClick={() => {
+          props.setPage("login");
+        }}
+        style={style.NavBarButton}
+      >
+        <FontAwesomeIcon icon={faSignInAlt} /> Reaction
+      </button>
+      <button
+        className="btn"
+        onClick={() => {
+          props.setPage("register");
+        }}
+        style={style.NavBarButton}
+      >
+        <FontAwesomeIcon icon={faUserPlus} /> Reagents
+      </button>
+      <button
+        className="btn"
+        onClick={() => {
+          props.setPage("experiment-editor");
+        }}
+        style={style.NavBarButton}
+      >
+        {" "}
+        <FontAwesomeIcon icon={faFlask} /> Log
+      </button>
+      <button className="btn" style={style.NavBarButton}>
+        <FontAwesomeIcon icon={faBook} /> Results
+      </button>
     </Navbar>
   );
 };
@@ -62,7 +102,7 @@ const NavBarSidebar = (props) => {
 export default NavBarSidebar;
 
 const style = {
-  Bar: { backgroundColor: "rgb(200,200,200)" },
+  Bar: { backgroundColor: "rgb(200,200,200)", overflowX: "auto" },
   NavBarButton: {
     background: "none",
     boder: "none",
