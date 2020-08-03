@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.css";
 import "./Dashboard.css";
 
+import DashboardBox from "./DashboardBox.jsx";
 import ProyectsTable from "./ProjectsTable.jsx";
 import DashboardLinkBox from "./DashboardLinkBox";
 import DashboardUserBox from "./DashboardUserBox";
@@ -39,7 +40,9 @@ const Dashboard = (props) => {
         <div className="row">
           <div className="col-lg-1"></div>
           <div className="col-lg-7">
-            <ProyectsTable data={sampleProjects} />
+            <DashboardBox boxTitle="My Projects">
+              <ProyectsTable data={sampleProjects} />
+            </DashboardBox>
           </div>
           <div className="col-lg-3" id="box-nuevo-reporte">
             <DashboardLinkBox
