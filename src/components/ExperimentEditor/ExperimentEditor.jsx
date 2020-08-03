@@ -13,6 +13,7 @@ import ExpGeneralInfo from "./ExpGeneralInfo";
 import MatsAndMethods from "./MatsAndMethods";
 import ReagentsTable from "./ReagentsTable";
 import NavBarMain from "../General/NavBarMain.jsx";
+import NavBarSecondary from "../General/NavBarSecondary.jsx";
 
 const ExperimentEditor = (props) => {
   const [user, setUser] = useState(sampleUsers[0]);
@@ -32,7 +33,8 @@ const ExperimentEditor = (props) => {
 
   return (
     <div className="container-fluid main-container experiment-editor">
-      <NavBarMain fixed="top" setPage={props.setPage} logoSendsTo={"dashboard"} />
+      <NavBarMain setPage={props.setPage} logoSendsTo={"dashboard"} />
+      <NavBarSecondary />
 
       <header className="exped-header">
         <div className="row">

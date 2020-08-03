@@ -14,7 +14,7 @@ import { faBook } from "@fortawesome/free-solid-svg-icons";
 
 const NavBarSidebar = (props) => {
   return (
-    <Navbar bg="dark" variant="dark" expand="lg">
+    <Navbar bg="dark" variant="dark" expand="sm" fixed="top" style={style.bar}>
       <Navbar.Brand href="#">
         <button
           className="navbar-brand"
@@ -23,7 +23,7 @@ const NavBarSidebar = (props) => {
           }}
           style={{ background: "none", border: "none", padding: "none" }}
         >
-          <img src="./img/logo-1.png" height="36" alt="" />
+          <img src="./img/logo-1.png" height="30" alt="" />
         </button>
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -90,9 +90,11 @@ const NavBarSidebar = (props) => {
 export default NavBarSidebar;
 
 const style = {
+  bar: { padding: "0px", margin: "0px" },
   NavBarButton: {
     background: "none",
     boder: "none",
-    color: "white",
+    color: "rgb(200,200,200)",
+    fontSize: "0.8em",
   },
 };
