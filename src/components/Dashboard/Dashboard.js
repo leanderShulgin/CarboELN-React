@@ -2,21 +2,19 @@ import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.css";
 import "./Dashboard.css";
 
-import sampleUsers from "../../samples/sampleUsers";
-
-import DashboardProyectsTable from "./DashboardProjectsTable";
+import ProyectsTable from "./ProjectsTable.jsx";
 import DashboardLinkBox from "./DashboardLinkBox";
 import DashboardUserBox from "./DashboardUserBox";
 import NavBarMain from "../General/NavBarMain.jsx";
 
+/* SAMPLES */
+import sampleUsers from "../../samples/sampleUsers";
+import sampleProjects from "../../samples/sampleProjects";
+
 const Dashboard = (props) => {
   return (
     <div className="container-fluid main-container" id="main-container">
-      <NavBarMain
-        fixed="top"
-        setPage={props.setPage}
-        logoSendsTo={"welcome"}
-      />
+      <NavBarMain fixed="top" setPage={props.setPage} logoSendsTo={"welcome"} />
 
       <header style={{ paddingTop: "60px" }}>
         <div className="row">
@@ -41,7 +39,7 @@ const Dashboard = (props) => {
         <div className="row">
           <div className="col-lg-1"></div>
           <div className="col-lg-7">
-            <DashboardProyectsTable />
+            <ProyectsTable data={sampleProjects} />
           </div>
           <div className="col-lg-3" id="box-nuevo-reporte">
             <DashboardLinkBox
