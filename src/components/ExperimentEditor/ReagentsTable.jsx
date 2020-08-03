@@ -17,13 +17,6 @@ edicion en cada fila que cargue los datos a ser editados en el menu.
 2) Hacer una tabla editable con un boton de agregar fila, se le pone un onChange a cada celda
 de la tabla.
 
-To Do: en vista movil ,mostrar sólo algunas columnas
-Opciones:
-
-1) La mas facil, mostrar solo nombre, cantidad+unidad y relación molar
-
-2) Mostrar un selector de columnas, ver solo columna nombre + la seleccionada
-
 */
 const sampleTableHeaders = [
   "#",
@@ -40,6 +33,7 @@ const sampleTableHeaders = [
 const ReagentsTable = (props) => {
   const [tableHeaders, setTableHeaders] = useState(props.headers);
   const [tableData, setTableData] = useState(props.data);
+  const [subpage, setSubpage] = useState("general")
 
   return (
     <div>
@@ -97,10 +91,19 @@ const ReagentsTable = (props) => {
       <div className="row">
         <div className="col-lg-1"></div>
         <div className="col-md-5 col-lg-4">
-          <div className="form-group">
-            <label for="scale-factor">Factor de escala: </label>
-            <input type="number" id="scale-factor" placeholder="1.0" />
-            <button id="btn-scale-experiment">Escalar</button>
+          <div className="form-group d-flex">
+            <label className="col-6">Factor de escala: </label>
+            <input
+              type="number"
+              placeholder="1.0"
+              className="form-control col-3"
+            />
+            <button
+              className="form-control col-3"
+              style={{ margin: "0px 10px" }}
+            >
+              Escalar
+            </button>
           </div>
         </div>
         <div className="col-md-7 col-lg-6"></div>
