@@ -3,7 +3,7 @@ h1 {
 }
 h3 {
   font-size: 1.5em;
-  color: rgb(245, 139, 18);
+  color: rgb(144, 163, 163);;
 }
 
 label {
@@ -19,7 +19,7 @@ label {
 }
 
 .register-submit {
-  background-color: rgb(245, 139, 18);
+  background-color: rgb(245, 82, 18);
   border-color: rgb(34, 31, 27);
-  color: rgb(34, 32, 30);
+  color: white;
 }

@@ -39,7 +39,11 @@ h2 {
 }
 h3 {
   font-size: 1.5em;
-  color: rgb(245, 139, 18);
+  color: rgb(245, 98, 40);
+}
+
+h4 {
+  color: rgb(144, 163, 163);
 }
 
 label {

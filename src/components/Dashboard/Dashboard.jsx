@@ -22,7 +22,9 @@ const Dashboard = (props) => {
           <div className="col-lg-1"></div>
           <div className="col-lg-7">
             <div className="dashboard-header-box start-box">
-              <h1 id="titulo-dashboard">Carbono ELN</h1>
+              <h1 id="titulo-dashboard" style={{ color: "rgb(245, 82, 18)" }}>
+                Carbo ELN
+              </h1>
               <h3>Inicio</h3>
               <p className="texto-dashboard">
                 Desde aquí podés acceder a todas las funciones del cuaderno de

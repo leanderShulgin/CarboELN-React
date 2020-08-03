@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.css";
-import "./ExpGeneralInfo.css";
 
 import TextAreaField from "../General/TextAreaField";
 

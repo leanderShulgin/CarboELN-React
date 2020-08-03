@@ -1,11 +1,12 @@
 import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.css";
-import "./DashboardUserBox.css";
 
 const DashboardUserBox = (props) => {
   return (
     <div className="start-box dashboard-user-box">
-      <h3>{props.data.username}</h3>
+      <h3 style={{ color: "rgb(245, 82, 18)" }}>
+        {props.data.username}
+      </h3>
       <div id="cont-usuario">
         <div id="cont-data-usuario">
           <ul>
