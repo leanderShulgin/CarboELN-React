@@ -11,22 +11,28 @@ import Welcome from "./components/Welcome.jsx";
 const App = () => {
   const [page, setPage] = useState("");
 
+  let currentPage = <Welcome setPage={setPage} />;
+
   switch (page) {
     case "dashboard":
-      return <Dashboard setPage={setPage} />;
+      currentPage = <Dashboard setPage={setPage} />;
+      break;
     case "login":
-      return <Login setPage={setPage} />;
+      currentPage = <Login setPage={setPage} />;
+      break;
     case "register":
-      return <Register setPage={setPage} />;
+      currentPage = <Register setPage={setPage} />;
+      break;
     case "experiment-editor":
-      return <ExperimentEditor setPage={setPage} />;
+      currentPage = <ExperimentEditor setPage={setPage} />;
+      break;
     case "project-viewer":
-      return <ProjectViewer setPage={setPage} />;
+      currentPage = <ProjectViewer setPage={setPage} />;
+      break;
     default:
-      return <Welcome setPage={setPage} />;
+      currentPage = <Welcome setPage={setPage} />;
   }
-  // return <ExperimentEditor />;
-  // return <ProjectViewer />;
+  return currentPage;
 };
 
 export default App;
