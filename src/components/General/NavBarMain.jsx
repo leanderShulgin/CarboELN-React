@@ -23,7 +23,7 @@ const NavBarSidebar = (props) => {
           }}
           style={{ background: "none", border: "none", padding: "none" }}
         >
-          <img src="./img/logo-1.png" height="30" alt="" />
+          <img src="./img/logo3.png" height="30" alt="" />
         </button>
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />

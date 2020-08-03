@@ -10,7 +10,7 @@ const Welcome = (props) => {
         <div className="col-lg-4 min-vh-100 d-flex justify-content-center align-items-center">
           <div className="container-fluid d-flex flex-column" style={style.box}>
             <img
-              src="./img/logo-3.png"
+              src="./img/logo3.png"
               alt="logo"
               className="welcomeSpinningLogo"
               style={style.logo}

@@ -9,7 +9,16 @@ const Login = (props) => {
         <div className="col-lg-4"></div>
         <div className="col-lg-4 min-vh-100 d-flex pepito justify-content-center align-items-center">
           <div className="login-box">
-            <h1>Carbono ELN</h1>
+            <h1
+              className="text-center welcomeCompanyName"
+              style={{ color: "rgb(245, 82, 18)" }}
+            >
+              <span>
+                <img src="./img/logo3.png" height="42" alt="CarboELN" />
+              </span>{" "}
+              Carbo ELN
+            </h1>
+
             <h3>Login</h3>
             <form>
               <div className="form-group">
@@ -32,7 +41,9 @@ const Login = (props) => {
                     e.preventDefault();
                     props.setPage("dashboard");
                   }}
-                >Sign In</button>
+                >
+                  Sign In
+                </button>
               </div>
             </form>
           </div>

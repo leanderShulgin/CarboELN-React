@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 // import logo from "./logo.svg";
 import "./App.css";
-import Dashboard from "./components/Dashboard/Dashboard";
+import Dashboard from "./components/Dashboard/Dashboard.jsx";
 import Login from "./components/Login.jsx";
 import Register from "./components/Register";
 import ProjectViewer from "./components/ProjectViewer/ProjectViewer";
