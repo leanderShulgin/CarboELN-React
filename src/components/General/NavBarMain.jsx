@@ -96,5 +96,6 @@ const style = {
     boder: "none",
     color: "rgb(200,200,200)",
     fontSize: "0.8em",
+    textAlign: "left",
   },
 };
