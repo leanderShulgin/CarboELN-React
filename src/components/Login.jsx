@@ -9,15 +9,15 @@ const Login = (props) => {
         <div className="col-lg-4"></div>
         <div className="col-lg-4 min-vh-100 d-flex pepito justify-content-center align-items-center">
           <div className="login-box">
-            <h1
-              className="text-center welcomeCompanyName"
-              style={{ color: "rgb(245, 82, 18)" }}
-            >
-              <span>
-                <img src="./img/logo3.png" height="42" alt="CarboELN" />
-              </span>{" "}
-              Carbo ELN
-            </h1>
+            <img
+              src="img/logo3-text-orange.png"
+              alt="Carbo ELN"
+              style={{
+                height: "50px",
+                maxWidth: "100%",
+                marginBottom: "20px",
+              }}
+            />
 
             <h3>Login</h3>
             <form>

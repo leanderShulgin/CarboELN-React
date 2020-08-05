@@ -20,9 +20,18 @@ const Dashboard = (props) => {
           <div className="col-lg-1"></div>
           <div className="col-lg-7">
             <div>
-              <h1>
+              {/* <h1>
                 Carbo ELN
-              </h1>
+              </h1> */}
+              <img
+                src="img/logo3-text-orange.png"
+                alt="Carbo ELN"
+                style={{
+                  height: "60px",
+                  maxWidth: "100%",
+                  marginBottom: "20px",
+                }}
+              />
               <h3>Inicio</h3>
               <p>
                 Desde aquí podés acceder a todas las funciones del cuaderno de
@@ -39,7 +48,7 @@ const Dashboard = (props) => {
       <main>
         <div className="row">
           <div className="col-lg-1"></div>
-          <div className="col-lg-7" style={{marginBottom: "40px"}}>
+          <div className="col-lg-7" style={{ marginBottom: "40px" }}>
             <DashboardBox boxTitle="My Projects">
               <ProyectsTable data={sampleProjects} />
             </DashboardBox>
