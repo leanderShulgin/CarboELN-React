@@ -8,7 +8,7 @@ import sampleUsers from "../../samples/sampleUsers";
 import sampleReagents from "../../samples/sampleReagents";
 import sampleGeneralInfo from "../../samples/sampleGeneralInfo";
 
-import DashboardUserBox from "../Dashboard/DashboardUserBox";
+import UserCard from "../Dashboard/UserCard.jsx";
 import ExpGeneralInfo from "./ExpGeneralInfo";
 import ReagentsTable from "./ReagentsTable";
 import ReactionEditor from "./ReactionEditor";
@@ -63,7 +63,7 @@ const ExperimentEditor = (props) => {
             </div>
           </div>
           <div className="col-lg-3">
-            <DashboardUserBox data={user} />
+            <UserCard data={user} />
           </div>
           <div className="col-lg-1"></div>
         </div>

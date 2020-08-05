@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.css";
 
-const DashboardUserBox = (props) => {
+const UserCard = (props) => {
   return (
     <div className="start-box dashboard-user-box">
       <h3 style={{ color: "rgb(245, 82, 18)" }}>
@@ -38,4 +38,4 @@ const DashboardUserBox = (props) => {
   );
 };
 
-export default DashboardUserBox;
+export default UserCard;

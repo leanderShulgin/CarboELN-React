@@ -5,7 +5,7 @@ import "./Dashboard.css";
 import DashboardBox from "./DashboardBox.jsx";
 import ProyectsTable from "./ProjectsTable.jsx";
 import DashboardLinkBox from "./DashboardLinkBox";
-import DashboardUserBox from "./DashboardUserBox";
+import UserCard from "./UserCard.jsx";
 import NavBarMain from "../General/NavBarMain.jsx";
 
 /* SAMPLES */
@@ -33,7 +33,7 @@ const Dashboard = (props) => {
             </div>
           </div>
           <div className="col-lg-3">
-            <DashboardUserBox data={sampleUsers[0]} />
+            <UserCard data={sampleUsers[0]} />
           </div>
           <div className="col-lg-1"></div>
         </div>

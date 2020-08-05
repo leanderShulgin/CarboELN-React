@@ -2,7 +2,6 @@ import React from "react";
 import "bootstrap/dist/css/bootstrap.css";
 import Table from "react-bootstrap/Table";
 import "./ProjectsTable.css";
-import DashboardBox from "./DashboardBox.jsx";
 
 const ProyectsTable = (props) => {
   const tableHeaders = ["Code", "Name", "Description"];
