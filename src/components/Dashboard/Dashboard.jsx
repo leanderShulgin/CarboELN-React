@@ -39,7 +39,7 @@ const Dashboard = (props) => {
       <main>
         <div className="row">
           <div className="col-lg-1"></div>
-          <div className="col-lg-7">
+          <div className="col-lg-7" style={{marginBottom: "40px"}}>
             <DashboardBox boxTitle="My Projects">
               <ProyectsTable data={sampleProjects} />
             </DashboardBox>

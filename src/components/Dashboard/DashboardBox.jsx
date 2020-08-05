@@ -2,7 +2,7 @@ import React from "react";
 
 const DashboardBox = (props) => {
   return (
-    <div style={styles.box} className="darkGreyBox">
+    <div style={styles.box} className="darkGrayBox">
       <h5 >{props.boxTitle}</h5>
       {props.children}
     </div>
