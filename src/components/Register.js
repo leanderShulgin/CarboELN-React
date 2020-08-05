@@ -1,6 +1,5 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.css";
-import "./Register.css";
 
 const Register = (props) => {
   return (

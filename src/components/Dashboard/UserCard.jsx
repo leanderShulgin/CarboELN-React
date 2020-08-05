@@ -4,9 +4,9 @@ import "bootstrap/dist/css/bootstrap.css";
 const UserCard = (props) => {
   return (
     <div className="start-box dashboard-user-box">
-      <h3 style={{ color: "rgb(245, 82, 18)" }}>
+      <h5 style={{ color: "rgb(245, 82, 18)" }}>
         {props.data.username}
-      </h3>
+      </h5>
       <div id="cont-usuario">
         <div id="cont-data-usuario">
           <ul>

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "bootstrap/dist/css/bootstrap.css";
+// import "bootstrap/dist/css/bootstrap.css";
 import Table from "react-bootstrap/Table";
 
 import sampleReagents from "../../samples/sampleReagents";

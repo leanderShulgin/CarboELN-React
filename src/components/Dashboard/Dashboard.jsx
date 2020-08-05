@@ -1,7 +1,5 @@
 import React, { useState } from "react";
-import "bootstrap/dist/css/bootstrap.css";
-import "./Dashboard.css";
-
+// import "bootstrap/dist/css/bootstrap.css";
 import DashboardBox from "./DashboardBox.jsx";
 import ProyectsTable from "./ProjectsTable.jsx";
 import DashboardLinkBox from "./DashboardLinkBox";
@@ -14,19 +12,19 @@ import sampleProjects from "../../samples/sampleProjects";
 
 const Dashboard = (props) => {
   return (
-    <div className="container-fluid main-container" id="main-container">
+    <div className="container-fluid main-container">
       <NavBarMain fixed="top" setPage={props.setPage} logoSendsTo={"welcome"} />
 
       <header style={{ paddingTop: "60px" }}>
         <div className="row">
           <div className="col-lg-1"></div>
           <div className="col-lg-7">
-            <div className="dashboard-header-box start-box">
-              <h1 id="titulo-dashboard" style={{ color: "rgb(245, 82, 18)" }}>
+            <div>
+              <h1>
                 Carbo ELN
               </h1>
               <h3>Inicio</h3>
-              <p className="texto-dashboard">
+              <p>
                 Desde aquí podés acceder a todas las funciones del cuaderno de
                 laboratorio electrónico
               </p>

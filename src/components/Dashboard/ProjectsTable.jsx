@@ -1,7 +1,6 @@
 import React from "react";
-import "bootstrap/dist/css/bootstrap.css";
+// import "bootstrap/dist/css/bootstrap.css";
 import Table from "react-bootstrap/Table";
-import "./ProjectsTable.css";
 
 const ProyectsTable = (props) => {
   const tableHeaders = ["Code", "Name", "Description"];

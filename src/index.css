@@ -1,13 +1,107 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+:root {
+  --orange: rgb(245, 88, 40);
+  --teal: rgb(84, 209, 203);
+  --darkGrey: rgb(20, 22, 22);
+  --midGrey: rgb(50, 61, 61);
+}
+
+h1 {
+  color: var(--teal);
+}
+
+h2 {
+  color: rgb(144, 163, 163);
+}
+h3 {
+  color: var(--orange);
+}
+
+h4 {
+  color: var(--teal);
+}
+
+h5 {
+  color: var(--teal);
+}
+
+label {
+  font-size: 0.9em;
+  color: white;
+}
+thead {
+  color: rgb(253, 253, 253);
+  font-size: 0.8em;
+}
+
+td {
+  color: rgb(211, 210, 210);
+  font-size: 0.7em;
+}
+
+.main-container {
+  background-color: rgb(20, 22, 22);
+  min-height: 100vh;
+}
+
+/* Dashboard*/
+
+.darkGreyBox {
+  color: white;
+  background-color: var(--midGrey);
+}
+
+.dashboard-link-box {
+  background-color: rgb(50, 61, 61);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.dashboard-link-box a {
+  color: white;
+}
+
+.start-box {
+  color: white;
+}
+
+/* Login and register*/
+
+.login-box {
+  background-color: rgb(50, 61, 61);
+  padding: 10px;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.login-submit {
+  background-color: rgb(245, 82, 18);
+  border-color: rgb(34, 31, 27);
+  color: white;
+}
+
+.register-box {
+  background-color: rgb(50, 61, 61);
+  padding: 10px;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.register-submit {
+  background-color: rgb(245, 82, 18);
+  border-color: rgb(34, 31, 27);
+  color: white;
 }
