@@ -40,8 +40,14 @@ const NavBarSidebar = (props) => {
       >
         <FontAwesomeIcon icon={faUserPlus} /> Reagents
       </button>
-      <button className="btn" disabled="true" style={style.NavBarButton}>
-        <FontAwesomeIcon icon={faFlask} /> Log
+      <button
+        className="btn"
+        onClick={() => {
+          props.setSubpage("files");
+        }}
+        style={style.NavBarButton}
+      >
+        <FontAwesomeIcon icon={faFlask} /> Files
       </button>
       <button className="btn" disabled="true" style={style.NavBarButton}>
         <FontAwesomeIcon icon={faBook} /> Results

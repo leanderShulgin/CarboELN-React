@@ -14,6 +14,7 @@ import ReagentsTable from "./ReagentsTable";
 import ReactionEditor from "./ReactionEditor";
 import NavBarMain from "../General/NavBarMain.jsx";
 import NavBarSecondary from "../General/NavBarSecondary.jsx";
+import FileLinksBox from "../General/FileLinksBox.jsx";
 
 const ExperimentEditor = (props) => {
   const [user, setUser] = useState(sampleUsers[0]);
@@ -43,6 +44,9 @@ const ExperimentEditor = (props) => {
       currentSubpage = (
         <ReagentsTable headers={sampleTableHeaders} data={reagents} />
       );
+      break
+    case "files":
+      currentSubpage = <FileLinksBox />;
       break;
     default:
       currentSubpage = <ExpGeneralInfo data={generalInfo} />;
