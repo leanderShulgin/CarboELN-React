@@ -1,5 +1,5 @@
 import React from "react";
-import "bootstrap/dist/css/bootstrap.css";
+// import "bootstrap/dist/css/bootstrap.css";
 import Navbar from "react-bootstrap/Navbar";
 
 /* FONT AWESOME ICONS:  */
@@ -43,15 +43,24 @@ const NavBarSidebar = (props) => {
       <button
         className="btn"
         onClick={() => {
+          props.setSubpage("reagents-acc");
+        }}
+        style={style.NavBarButton}
+      >
+        <FontAwesomeIcon icon={faUserPlus} /> Reagents Acc
+      </button>
+      <button
+        className="btn"
+        onClick={() => {
           props.setSubpage("files");
         }}
         style={style.NavBarButton}
       >
         <FontAwesomeIcon icon={faFlask} /> Files
       </button>
-      <button className="btn" disabled="true" style={style.NavBarButton}>
+      {/* <button className="btn" disabled="true" style={style.NavBarButton}>
         <FontAwesomeIcon icon={faBook} /> Results
-      </button>
+      </button> */}
       <button className="btn" disabled="true" style={style.NavBarButton}>
         <FontAwesomeIcon icon={faHome} /> General
       </button>

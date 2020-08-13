@@ -8,9 +8,11 @@ import sampleUsers from "../../samples/sampleUsers";
 import sampleReagents from "../../samples/sampleReagents";
 import sampleGeneralInfo from "../../samples/sampleGeneralInfo";
 
+// Components
 import UserCard from "../Dashboard/UserCard.jsx";
-import ExpGeneralInfo from "./ExpGeneralInfo";
-import ReagentsTable from "./ReagentsTable";
+import ExpGeneralInfo from "./ExpGeneralInfo.jsx";
+import ReagentsTable from "./ReagentsTable.jsx";
+import ReagentsAccordion from "./ReagentsAccordion.jsx";
 import ReactionEditor from "./ReactionEditor";
 import NavBarMain from "../General/NavBarMain.jsx";
 import NavBarSecondary from "../General/NavBarSecondary.jsx";
@@ -44,12 +46,20 @@ const ExperimentEditor = (props) => {
       currentSubpage = (
         <ReagentsTable headers={sampleTableHeaders} data={reagents} />
       );
-      break
+      break;
+    case "reagents-acc":
+      currentSubpage = (
+        <ReagentsAccordion headers={sampleTableHeaders} data={reagents} />
+      );
+      break;
     case "files":
       currentSubpage = <FileLinksBox />;
       break;
     default:
-      currentSubpage = <ExpGeneralInfo data={generalInfo} />;
+      // currentSubpage = <ExpGeneralInfo data={generalInfo} />;
+      currentSubpage = (
+        <ReagentsAccordion headers={sampleTableHeaders} data={reagents} />
+      );
   }
 
   return (

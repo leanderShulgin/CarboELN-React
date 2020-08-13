@@ -30,7 +30,8 @@ const App = () => {
       currentPage = <ProjectViewer setPage={setPage} />;
       break;
     default:
-      currentPage = <Welcome setPage={setPage} />;
+      // currentPage = <Welcome setPage={setPage} />;
+      currentPage = <ExperimentEditor setPage={setPage} />;
   }
   return currentPage;
 };

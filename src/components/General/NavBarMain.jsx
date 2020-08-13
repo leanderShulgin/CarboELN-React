@@ -89,7 +89,7 @@ const NavBarSidebar = (props) => {
 export default NavBarSidebar;
 
 const style = {
-  bar: { padding: "0px", margin: "0px" },
+  bar: { padding: "0px", marginBottom: "20px" },
   NavBarButton: {
     background: "none",
     boder: "none",

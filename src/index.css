@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital@0;1&display=swap");
 
+/* GENERAL ELEMENTS */
+
 body {
   margin: 0;
   font-family: "Noto Sans", sans-serif;
@@ -25,6 +27,10 @@ code {
 
 a {
   font-size: 0.8em;
+}
+
+header {
+  margin: 40px 0;
 }
 
 h1 {
@@ -108,6 +114,8 @@ ul {
   color: white;
 }
 
+/* Buttons */
+
 .big-btn {
   margin: 10px 0;
   border: none;
@@ -130,6 +138,15 @@ ul {
 .teal-btn:active {
   background-color: var(--brightTeal);
   color: var(--darkGray);
+}
+
+/* Cards */
+
+.reagent-card-header {
+  color: var(--teal);
+}
+.reagent-card-body {
+  color: var(--lightGray);
 }
 
 .register-box {
