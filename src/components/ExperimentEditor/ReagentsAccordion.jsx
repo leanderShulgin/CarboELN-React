@@ -16,13 +16,6 @@ const ReagentsAccordion = (props) => {
       <div className="row">
         <div className="col-lg-1"></div>
         <div className="col-lg-10 columna">
-          <h3>Reagents</h3>
-        </div>
-        <div className="col-lg-1"></div>
-      </div>
-      <div className="row">
-        <div className="col-lg-1"></div>
-        <div className="col-lg-10 columna">
           <Accordion>
             {/* <Card bg="dark" className="reagent-card">
               <Card.Header className="d-flex justify-content-between reagent-card-header">

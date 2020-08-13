@@ -43,15 +43,6 @@ const NavBarSidebar = (props) => {
       <button
         className="btn"
         onClick={() => {
-          props.setSubpage("reagents-acc");
-        }}
-        style={style.NavBarButton}
-      >
-        <FontAwesomeIcon icon={faUserPlus} /> Reagents Acc
-      </button>
-      <button
-        className="btn"
-        onClick={() => {
           props.setSubpage("files");
         }}
         style={style.NavBarButton}

@@ -25,13 +25,6 @@ const ReagentsTable = (props) => {
     <div>
       <div className="row">
         <div className="col-lg-1"></div>
-        <div className="col-lg-10 columna">
-          <h3>Reagents</h3>
-        </div>
-        <div className="col-lg-1"></div>
-      </div>
-      <div className="row">
-        <div className="col-lg-1"></div>
         <div className="col-lg-10">
           <Table
             striped

@@ -140,6 +140,10 @@ ul {
   color: var(--darkGray);
 }
 
+.toggle-btn-reagents {
+  color: var(--lightGray);
+}
+
 /* Cards */
 
 .reagent-card-header {
