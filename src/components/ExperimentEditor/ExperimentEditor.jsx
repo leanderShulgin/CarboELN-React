@@ -58,7 +58,7 @@ const ExperimentEditor = (props) => {
     default:
       // currentSubpage = <ExpGeneralInfo data={generalInfo} />;
       currentSubpage = (
-        <ReagentsAccordion headers={sampleTableHeaders} data={reagents} />
+        <ReagentsAccordion data={reagents} />
       );
   }
 
