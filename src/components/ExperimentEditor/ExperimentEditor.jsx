@@ -71,7 +71,7 @@ const ExperimentEditor = (props) => {
             </div>
           </div>
           <div className="col-lg-3">
-            <UserCard data={user} />
+            {/* <UserCard data={user} /> */}
           </div>
           <div className="col-lg-1"></div>
         </div>
