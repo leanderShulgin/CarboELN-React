@@ -8,15 +8,6 @@ const Register = (props) => {
         <div className="col-lg-4"></div>
         <div className="col-lg-4 min-vh-100 d-flex pepito justify-content-center align-items-center">
           <div className="register-box">
-            {/* <h1
-              className="text-center welcomeCompanyName"
-              style={{ color: "rgb(245, 82, 18)" }}
-            >
-              <span>
-                <img src="./img/logo3.png" height="42" alt="CarboELN" />
-              </span>{" "}
-              Carbo ELN
-            </h1> */}
             <img
               src="img/logo3-text-orange.png"
               alt="Carbo ELN"
@@ -29,7 +20,7 @@ const Register = (props) => {
             <h3>Register</h3>
             <form>
               <div className="form-group">
-                <label for="username">User</label>
+                <label for="username">Email</label>
                 <input id="username" className="form-control"></input>
               </div>
               <div className="form-group">
@@ -51,7 +42,7 @@ const Register = (props) => {
               <div className="form-group">
                 <button
                   type="submit"
-                  className="form-control register-submit"
+                  className="form-control big-btn orange-btn"
                   onClick={(e) => {
                     e.preventDefault();
                     props.setPage("dashboard");

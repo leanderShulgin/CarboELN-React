@@ -36,7 +36,7 @@ const Login = (props) => {
               <div className="form-group">
                 <button
                   type="submit"
-                  className="form-control login-submit"
+                  className="form-control orange-btn big-btn"
                   onClick={(e) => {
                     e.preventDefault();
                     props.setPage("dashboard");

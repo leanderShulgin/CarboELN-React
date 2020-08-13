@@ -23,13 +23,20 @@ const Welcome = (props) => {
             </h1>
             <div clasName="form-group">
               <button
-                className="form-control"
-                style={style.button}
-                onClick={() => {
-                  props.setPage("dashboard");
+                className="form-control orange-btn big-btn"
+                onClick={(e) => {
+                  props.setPage("login");
                 }}
               >
-                Ingresar
+                Log In
+              </button>
+              <button
+                className="form-control teal-btn big-btn"
+                onClick={(e) => {
+                  props.setPage("register");
+                }}
+              >
+                Register
               </button>
             </div>
           </div>
@@ -47,7 +54,6 @@ const style = {
     bordeRadius: "5px",
   },
   button: {
-    backgroundColor: "rgb(56, 70, 64)",
     color: "white",
     border: "none",
   },

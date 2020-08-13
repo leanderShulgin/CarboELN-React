@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import "./App.css";
 import Dashboard from "./components/Dashboard/Dashboard.jsx";
 import Login from "./components/Login.jsx";
-import Register from "./components/Register";
+import Register from "./components/Register.jsx";
 import ProjectViewer from "./components/ProjectViewer/ProjectViewer";
 import ExperimentEditor from "./components/ExperimentEditor/ExperimentEditor";
 import Welcome from "./components/Welcome.jsx";
