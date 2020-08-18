@@ -16,6 +16,7 @@ import ReactionEditor from "./ReactionEditor";
 import NavBarMain from "../General/NavBarMain.jsx";
 import NavBarSecondary from "../General/NavBarSecondary.jsx";
 import FileLinksBox from "../General/FileLinksBox.jsx";
+import KekuleComposer from "../Chem/KekuleComposer.jsx";
 
 const ExperimentEditor = (props) => {
   const [user, setUser] = useState(sampleUsers[0]);
@@ -46,6 +47,11 @@ const ExperimentEditor = (props) => {
         <Reagents headers={sampleTableHeaders} data={reagents} />
       );
       break;
+      case "composer":
+        currentSubpage = (
+          <KekuleComposer />
+        );
+        break;
     case "files":
       currentSubpage = <FileLinksBox />;
       break;

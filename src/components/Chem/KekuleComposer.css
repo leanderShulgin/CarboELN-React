@@ -1,0 +1,12 @@
+.kekule-widget-msg {
+    display: none;
+}
+
+@media only screen and (max-width: 400px) {
+  .kekule-widget-cont {
+    display: none;
+  }
+  .kekule-widget-msg {
+    display: block;
+  }
+}

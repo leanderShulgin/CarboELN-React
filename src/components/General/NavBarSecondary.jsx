@@ -9,6 +9,9 @@ import { faSignInAlt } from "@fortawesome/free-solid-svg-icons";
 import { faUserPlus } from "@fortawesome/free-solid-svg-icons";
 import { faFlask } from "@fortawesome/free-solid-svg-icons";
 import { faBook } from "@fortawesome/free-solid-svg-icons";
+import { faAtom } from "@fortawesome/free-solid-svg-icons";
+import { faFolderOpen } from "@fortawesome/free-solid-svg-icons";
+import { faLongArrowAltRight } from "@fortawesome/free-solid-svg-icons";
 
 const NavBarSidebar = (props) => {
   return (
@@ -29,7 +32,7 @@ const NavBarSidebar = (props) => {
         }}
         style={style.NavBarButton}
       >
-        <FontAwesomeIcon icon={faSignInAlt} /> Reaction
+        <FontAwesomeIcon icon={faLongArrowAltRight} /> Reaction
       </button>
       <button
         className="btn"
@@ -38,7 +41,7 @@ const NavBarSidebar = (props) => {
         }}
         style={style.NavBarButton}
       >
-        <FontAwesomeIcon icon={faUserPlus} /> Reagents
+        <FontAwesomeIcon icon={faFlask} /> Reagents
       </button>
       <button
         className="btn"
@@ -47,12 +50,21 @@ const NavBarSidebar = (props) => {
         }}
         style={style.NavBarButton}
       >
-        <FontAwesomeIcon icon={faFlask} /> Files
+        <FontAwesomeIcon icon={faFolderOpen} /> Files
+      </button>
+      <button
+        className="btn"
+        onClick={() => {
+          props.setSubpage("composer");
+        }}
+        style={style.NavBarButton}
+      >
+        <FontAwesomeIcon icon={faAtom} /> Composer
       </button>
       {/* <button className="btn" disabled="true" style={style.NavBarButton}>
         <FontAwesomeIcon icon={faBook} /> Results
       </button> */}
-      <button className="btn" disabled="true" style={style.NavBarButton}>
+      {/* <button className="btn" disabled="true" style={style.NavBarButton}>
         <FontAwesomeIcon icon={faHome} /> General
       </button>
       <button className="btn" disabled="true" style={style.NavBarButton}>
@@ -67,7 +79,7 @@ const NavBarSidebar = (props) => {
       </button>
       <button className="btn" disabled="true" style={style.NavBarButton}>
         <FontAwesomeIcon icon={faBook} /> Results
-      </button>
+      </button> */}
     </Navbar>
   );
 };
