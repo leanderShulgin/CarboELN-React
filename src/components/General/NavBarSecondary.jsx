@@ -17,7 +17,7 @@ const NavBarSidebar = (props) => {
   return (
     <Navbar fixed="bottom" style={style.Bar}>
       <button
-        className="btn"
+        className="btn btn-nav-sec"
         onClick={() => {
           props.setSubpage("");
         }}
@@ -26,7 +26,7 @@ const NavBarSidebar = (props) => {
         <FontAwesomeIcon icon={faHome} /> General
       </button>
       <button
-        className="btn"
+        className="btn btn-nav-sec"
         onClick={() => {
           props.setSubpage("reaction");
         }}
@@ -35,7 +35,7 @@ const NavBarSidebar = (props) => {
         <FontAwesomeIcon icon={faLongArrowAltRight} /> Reaction
       </button>
       <button
-        className="btn"
+        className="btn btn-nav-sec"
         onClick={() => {
           props.setSubpage("reagents");
         }}
@@ -44,7 +44,7 @@ const NavBarSidebar = (props) => {
         <FontAwesomeIcon icon={faFlask} /> Reagents
       </button>
       <button
-        className="btn"
+        className="btn btn-nav-sec"
         onClick={() => {
           props.setSubpage("files");
         }}
@@ -53,7 +53,7 @@ const NavBarSidebar = (props) => {
         <FontAwesomeIcon icon={faFolderOpen} /> Files
       </button>
       <button
-        className="btn"
+        className="btn btn-nav-sec"
         onClick={() => {
           props.setSubpage("composer");
         }}
@@ -61,23 +61,23 @@ const NavBarSidebar = (props) => {
       >
         <FontAwesomeIcon icon={faAtom} /> Composer
       </button>
-      {/* <button className="btn" disabled="true" style={style.NavBarButton}>
+      {/* <button className="btn btn-nav-sec" disabled="true" style={style.NavBarButton}>
         <FontAwesomeIcon icon={faBook} /> Results
       </button> */}
-      {/* <button className="btn" disabled="true" style={style.NavBarButton}>
+      {/* <button className="btn btn-nav-sec" disabled="true" style={style.NavBarButton}>
         <FontAwesomeIcon icon={faHome} /> General
       </button>
-      <button className="btn" disabled="true" style={style.NavBarButton}>
+      <button className="btn btn-nav-sec" disabled="true" style={style.NavBarButton}>
         <FontAwesomeIcon icon={faSignInAlt} /> Reaction
       </button>
-      <button className="btn" disabled="true" style={style.NavBarButton}>
+      <button className="btn btn-nav-sec" disabled="true" style={style.NavBarButton}>
         <FontAwesomeIcon icon={faUserPlus} /> Reagents
       </button>
-      <button className="btn" disabled="true" style={style.NavBarButton}>
+      <button className="btn btn-nav-sec" disabled="true" style={style.NavBarButton}>
         {" "}
         <FontAwesomeIcon icon={faFlask} /> Log
       </button>
-      <button className="btn" disabled="true" style={style.NavBarButton}>
+      <button className="btn btn-nav-sec" disabled="true" style={style.NavBarButton}>
         <FontAwesomeIcon icon={faBook} /> Results
       </button> */}
     </Navbar>
@@ -87,11 +87,15 @@ const NavBarSidebar = (props) => {
 export default NavBarSidebar;
 
 const style = {
-  Bar: { backgroundColor: "rgb(200,200,200)", overflowX: "auto" },
+  Bar: {
+    backgroundColor: "rgb(200,200,200)",
+    overflowX: "auto",
+    padding: "0px",
+  },
   NavBarButton: {
-    background: "none",
     boder: "none",
-    color: "black",
     fontSize: "0.6em",
+    padding: "10px 5px",
+    borderRadius: "0",
   },
 };

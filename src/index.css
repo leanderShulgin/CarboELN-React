@@ -146,6 +146,17 @@ ul {
   color: var(--lightGray);
 }
 
+.btn-nav-sec {
+  color: var(--midGrey);
+  background-color: none;
+}
+
+.btn-nav-sec:active {
+  color: var(--darkGrey);
+  background-color: var(--teal);
+  border: none;
+}
+
 /* Cards */
 
 .reagent-card-header {

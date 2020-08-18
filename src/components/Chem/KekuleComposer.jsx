@@ -24,7 +24,8 @@ export class KekuleComposer extends Component {
             ref={this.composerCont}
           />
           <h4 className="kekule-widget-msg">
-            Debes poner el teléfono en horizontal
+            You have turn your phone to a horizontal position in order to use the Chemical
+            Composer
           </h4>
         </div>
         <div className="col-lg-1"></div>
