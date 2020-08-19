@@ -1,5 +1,14 @@
+/*----Kekule editor--------*/
+.K-Button {
+  background: rgb(255, 255, 255);
+  padding: 0;
+}
+.K-Button:active {
+  background: rgb(7, 250, 149);
+}
+
 .kekule-widget-msg {
-    display: none;
+  display: none;
 }
 
 @media only screen and (max-width: 400px) {

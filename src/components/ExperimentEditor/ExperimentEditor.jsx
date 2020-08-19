@@ -49,6 +49,7 @@ const ExperimentEditor = (props) => {
       break;
       case "composer":
         currentSubpage = (
+          // <ExpGeneralInfo data={generalInfo} />
           <KekuleComposer />
         );
         break;
