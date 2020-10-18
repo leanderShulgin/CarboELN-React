@@ -29,7 +29,7 @@ const ReagentsTable = (props) => {
             striped
             bordered
             hover
-            variant="dark"
+            variant="light"
             size="sm"
             responsive="lg"
             style={styles.table}

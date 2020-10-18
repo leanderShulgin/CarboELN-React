@@ -50,7 +50,10 @@ const Dashboard = (props) => {
           <div className="col-lg-1"></div>
           <div className="col-lg-7" style={{ marginBottom: "40px" }}>
             <DashboardBox boxTitle="My Projects">
-              <ProyectsTable data={sampleProjects} />
+              <ProyectsTable
+                data={sampleProjects}
+                style={{ borderRadius: "10px" }}
+              />
             </DashboardBox>
           </div>
           <div className="col-lg-3" id="box-nuevo-reporte">

@@ -5,9 +5,9 @@ const Register = (props) => {
   return (
     <div className="container-fluid main-container">
       <div className="row">
-        <div className="col-lg-4"></div>
-        <div className="col-lg-4 min-vh-100 d-flex pepito justify-content-center align-items-center">
-          <div className="register-box">
+        <div className="col-lg-3"></div>
+        <div className="col-lg-6 min-vh-100 d-flex pepito justify-content-center align-items-center">
+          <div className="form-box">
             <img
               src="img/logo3-text-orange.png"
               alt="Carbo ELN"
@@ -54,7 +54,7 @@ const Register = (props) => {
             </form>
           </div>
         </div>
-        <div className="col-lg-4"></div>
+        <div className="col-lg-3"></div>
       </div>
     </div>
   );

@@ -9,7 +9,7 @@ const ProyectsTable = (props) => {
       striped
       bordered
       hover
-      variant="dark"
+      variant="light"
       size="sm"
       responsive="md"
       className="text-center"

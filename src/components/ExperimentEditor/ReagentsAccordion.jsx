@@ -32,7 +32,7 @@ const ReagentsAccordion = (props) => {
             </Card> */}
             {props.data.map((reagent, index) => {
               return (
-                <Card bg="dark" className="reagent-card" key={index}>
+                <Card bg="light" className="reagent-card" key={index}>
                   {/* Header-------------------------------- */}
                   <Card.Header className="d-flex justify-content-between reagent-card-header">
                     {index + 1} - {reagent.name}

@@ -20,9 +20,9 @@ code {
   --darkOrange: rgb(231, 50, 40);
   --teal: rgb(84, 209, 182);
   --brightTeal: rgb(32, 245, 234);
-  --intenseTeal: rgb(15, 185, 177);
+  --intenseTeal: rgb(19, 148, 141);
   --almostWhite: rgb(250, 250, 250);
-  --lightGray: rgb(210, 210, 210);
+  --lightGray: rgb(245, 240, 240);
   --darkGray: rgb(20, 22, 22);
   --midGrey: rgb(50, 61, 61);
 }
@@ -36,14 +36,14 @@ header {
 }
 
 h1 {
-  color: var(--teal);
+  color: var(--darkOrange);
 }
 
 h2 {
-  color: rgb(144, 163, 163);
+  color: var(--midGrey);
 }
 h3 {
-  color: var(--orange);
+  color: var(--darkOrange);
 }
 
 h4 {
@@ -56,19 +56,20 @@ h5 {
 
 p {
   font-size: 1em;
+  color: var(--darkGray);
 }
 
 label {
   font-size: 0.9em;
-  color: white;
+  color: var(--intenseTeal);
 }
 thead {
-  color: var(--almostWhite);
+  color: var(--darkGray);
   font-size: 0.8em;
 }
 
 td {
-  color: var(--lightGray);
+  color: var(--darkGray);
   font-size: 0.7em;
 }
 
@@ -77,8 +78,7 @@ ul {
 }
 
 .main-container {
-  background-color: rgb(20, 22, 22);
-  min-height: 100vh;
+  background-color: white;
 }
 
 /* Dashboard*/
@@ -104,9 +104,8 @@ ul {
 
 /* Login and register*/
 
-.login-box {
-  background-color: rgb(50, 61, 61);
-  padding: 10px;
+.form-box {
+  padding: 40px;
   width: 100%;
   border-radius: 5px;
 }
@@ -163,7 +162,7 @@ ul {
   color: var(--teal);
 }
 .reagent-card-body {
-  color: var(--lightGray);
+  color: var(--darkGray);
 }
 
 .register-box {
@@ -173,3 +172,42 @@ ul {
   border-radius: 5px;
 }
 
+/* Experiment Editor */
+.exped-header {
+  padding-top: 60px;
+}
+
+.experiment-editor h3 {
+  font-size: 1.3em;
+  padding: 10px 0;
+}
+
+.experiment-editor nav h4 {
+  color: var(--darkOrange);
+}
+
+@media only screen and (min-width: 768px) {
+
+  .experiment-editor textarea,
+  .experiment-editor input {
+    font-size: 1em;
+  }
+  .experiment-editor h3 {
+    font-size: 1.6em;
+  }
+
+  .experiment-editor h4 {
+    font-size: 1.4em;
+  }
+  .experiment-editor ul,
+  .experiment-editor p {
+    font-size: 0.9em;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .form-box {
+    border-radius: 5px;
+    box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.2);
+  }
+}

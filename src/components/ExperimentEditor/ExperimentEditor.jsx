@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 // import "bootstrap/dist/css/bootstrap.css";
-import "./ExperimentEditor.css";
+
 
 // This samples are only for de GUI development fase, later
 // they sould be replace with the data from de db.
